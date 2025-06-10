@@ -1,0 +1,496 @@
+{
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "plural_forms": "nplurals=2; plural=n != 1;",
+                "lang": "en"
+            },
+            "Sensitivity": [
+                "Sensitivity"
+            ],
+            "Specificity": [
+                "Specificity"
+            ],
+            "Positive Likelihood Ratio": [
+                "Positive Likelihood Ratio"
+            ],
+            "Negative Likelihood Ratio": [
+                "Negative Likelihood Ratio"
+            ],
+            "Prevalence": [
+                "Prevalence"
+            ],
+            "Positive Predictive Value": [
+                "Positive Predictive Value"
+            ],
+            "Negative Predictive Value": [
+                "Negative Predictive Value"
+            ],
+            "Accuracy": [
+                "Accuracy"
+            ],
+            "Relative Risk": [
+                "Relative Risk"
+            ],
+            "Absolute Risk Reduction (ARR)": [
+                "Absolute Risk Reduction (ARR)"
+            ],
+            "Relative Risk Reduction (RRR)": [
+                "Relative Risk Reduction (RRR)"
+            ],
+            "Number Needed To Treat (NNT)": [
+                "Number Needed To Treat (NNT)"
+            ],
+            "Odds Ratio": [
+                "Odds Ratio"
+            ],
+            " (Harm)": [
+                " (Harm)"
+            ],
+            " (Benefit)": [
+                " (Benefit)"
+            ],
+            "Diagnostic Test Positive": [
+                "Diagnostic Test Positive"
+            ],
+            "Diagnostic Test Negative": [
+                "Diagnostic Test Negative"
+            ],
+            "Likelihood Ratio": [
+                "Likelihood Ratio"
+            ],
+            "Pretest Probability (%)": [
+                "Pretest Probability (%)"
+            ],
+            "Posttest Probability (%)": [
+                "Posttest Probability (%)"
+            ],
+            "Pretest Prob.": [
+                "Pretest Prob."
+            ],
+            "Posttest Positive": [
+                "Posttest Positive"
+            ],
+            "Posttest Negative": [
+                "Posttest Negative"
+            ],
+            "Class variable must have exactly 2 levels.": [
+                "Class variable must have exactly 2 levels."
+            ],
+            "Selected event level is not valid.": [
+                "Selected event level is not valid."
+            ],
+            "The class variable doesn't have exactly 2 levels in rows where '{col}' is not missing.": [
+                "The class variable doesn't have exactly 2 levels in rows where '{col}' is not missing."
+            ],
+            "ROC Curve": [
+                "ROC Curve"
+            ],
+            "1 - Specificity": [
+                "1 - Specificity"
+            ],
+            "Positive if test %s cut-off (direction chosen to maximize AUC).": [
+                ""
+            ],
+            "<h4>Procedure Notes</h4>": [
+                "<h4>Procedure Notes</h4>"
+            ],
+            "<p>Please begin by selecting your test/exposure variable and reference test/disease variable.</p>": [
+                "<p>Please begin by selecting your test/exposure variable and reference test/disease variable.</p>"
+            ],
+            "<p>The test/exposure variable can be of any measurement type. The level selector and cutoff editor will be enabled or disabled automatically based on the variable type.</p>": [
+                "<p>The test/exposure variable can be of any measurement type. The level selector and cutoff editor will be enabled or disabled automatically based on the variable type.</p>"
+            ],
+            "<p>Ordinal variables with more than two levels will be treated as continuous, and require at least one cutoff value to be specified.</p>": [
+                "<p>Ordinal variables with more than two levels will be treated as continuous, and require at least one cutoff value to be specified.</p>"
+            ],
+            "<p>You may define multiple cutoff values for continuous or ordinal test variables.</p>": [
+                "<p>You may define multiple cutoff values for continuous or ordinal test variables.</p>"
+            ],
+            "<p>Ordinal variables with exactly two levels will be treated as dichotomous.</p>": [
+                "<p>Ordinal variables with exactly two levels will be treated as dichotomous.</p>"
+            ],
+            "Positive": [
+                "Positive"
+            ],
+            "Negative": [
+                "Negative"
+            ],
+            "Reference Test / Disease": [
+                "Reference Test / Disease"
+            ],
+            "New Test /<br>Exposure": [
+                "New Test /<br>Exposure"
+            ],
+            "Total": [
+                "Total"
+            ],
+            "<h3>When to use?</h3>": [
+                "<h3>When to use?</h3>"
+            ],
+            "<h3>Comments</h3>": [
+                "<h3>Comments</h3>"
+            ],
+            "<h2>Single Test Design, new diagnostic test</h2>": [
+                "<h2>Single Test Design, new diagnostic test</h2>"
+            ],
+            "<p>This formula is used to estimate the sample size when the new diagnostic test is compared with the reference standard in a cohort where the true disease status and prevalence is known.</p>": [
+                "<p>This formula is used to estimate the sample size when the new diagnostic test is compared with the reference standard in a cohort where the true disease status and prevalence is known.</p>"
+            ],
+            "<p><strong>Sens or Spec</strong>: pre-determined value ascertained by previous published data or clinician experience/judgment</p><p><strong>Marginal error</strong>: maximum error of the estimate with a confidence level of 95%.</p><p><strong>Prevalence</strong>: disease prevalence in the study population.</p><p>Estimated sample sizes will be different for the same sensitivity and specificity if the disease prevalence is not 50%, or when the number subjects with and without the disease are not equal.</p>": [
+                "<p><strong>Sens or Spec</strong>: pre-determined value ascertained by previous published data or clinician experience/judgment</p><p><strong>Marginal error</strong>: maximum error of the estimate with a confidence level of 95%.</p><p><strong>Prevalence</strong>: disease prevalence in the study population.</p><p>Estimated sample sizes will be different for the same sensitivity and specificity if the disease prevalence is not 50%, or when the number subjects with and without the disease are not equal.</p>"
+            ],
+            "<h2>Single Test Design, comparing the accuracy of a single test to a null value</h2>": [
+                "<h2>Single Test Design, comparing the accuracy of a single test to a null value</h2>"
+            ],
+            "<p>This formula is used to estimate the sample size when the diagnostic test is compared with the reference standard in a cohort where the true disease status and prevalence is <strong>unknown</strong>.</p><p>After the using the Equations, calculated values should be adjusted according to disease prevelance.</p>": [
+                "<p>This formula is used to estimate the sample size when the diagnostic test is compared with the reference standard in a cohort where the true disease status and prevalence is <strong>unknown</strong>.</p><p>After the using the Equations, calculated values should be adjusted according to disease prevelance.</p>"
+            ],
+            "<h2>Studies comparing two diagnostic tests</h2>": [
+                "<h2>Studies comparing two diagnostic tests</h2>"
+            ],
+            "<h5>Unpaired (between-subjects) design</h5><p>Participants are randomly assigned to either the index or comparator test.</p><h5>Paired (within-subjects) design</h5><p>Two comparator tests are applied to all subjects along with the reference standard</p>": [
+                "<h5>Unpaired (between-subjects) design</h5><p>Participants are randomly assigned to either the index or comparator test.</p><h5>Paired (within-subjects) design</h5><p>Two comparator tests are applied to all subjects along with the reference standard</p>"
+            ],
+            "<p>One-sided N is preferred since we want to test if one of the paths are different than the other</p><p><strong>Ψ (min)</strong> where the disagreement is minimum (P2-P1)</p><p><strong>Ψ (max)</strong> where the agreement is by chance, or disagreement is maximum</p><p>Cont.Correction are the values where the Yates' continuity correction was applied</p>": [
+                "<p>One-sided N is preferred since we want to test if one of the paths are different than the other</p><p><strong>Ψ (min)</strong> where the disagreement is minimum (P2-P1)</p><p><strong>Ψ (max)</strong> where the agreement is by chance, or disagreement is maximum</p><p>Cont.Correction are the values where the Yates' continuity correction was applied</p>"
+            ],
+            "N(sens)": [
+                "N(sens)"
+            ],
+            "N(spec)": [
+                "N(spec)"
+            ],
+            "N(sens, adjusted)": [
+                "N(sens, adjusted)"
+            ],
+            "N(spec, adjusted)": [
+                "N(spec, adjusted)"
+            ],
+            "N(max)": [
+                "N(max)"
+            ],
+            "Unpaired Design": [
+                "Unpaired Design"
+            ],
+            "Paired Design": [
+                "Paired Design"
+            ],
+            "N": [
+                "N"
+            ],
+            "N (Total)": [
+                "N (Total)"
+            ],
+            "N (Ψ_min)": [
+                "N (Ψ_min)"
+            ],
+            "N (Ψ_max)": [
+                "N (Ψ_max)"
+            ],
+            "Mean": [
+                "Mean"
+            ],
+            "diseased": [
+                "diseased"
+            ],
+            "not-diseased": [
+                "not-diseased"
+            ],
+            "total subjects": [
+                "total subjects"
+            ],
+            "for each group": [
+                "for each group"
+            ],
+            "for the study": [
+                "for the study"
+            ],
+            "for each study": [
+                "for each study"
+            ],
+            "ROC Curves Combined": [
+                "ROC Curves Combined"
+            ],
+            "ROC Curve Summary": [
+                "ROC Curve Summary"
+            ],
+            "Results": [
+                "Results"
+            ],
+            "Result": [
+                "Result"
+            ],
+            "95% CI": [
+                "95% CI"
+            ],
+            "Lower": [
+                "Lower"
+            ],
+            "Upper": [
+                "Upper"
+            ],
+            "Pairwise AUC Comparisons (DeLong's Test)": [
+                "Pairwise AUC Comparisons (DeLong's Test)"
+            ],
+            "AUC Difference": [
+                "AUC Difference"
+            ],
+            "Variables": [
+                "Variables"
+            ],
+            "ROC Curve: $key": [
+                "ROC Curve: $key"
+            ],
+            "Cut-off Coordinates: $key": [
+                "Cut-off Coordinates: $key"
+            ],
+            "Cut-off": [
+                "Cut-off"
+            ],
+            "TP": [
+                "TP"
+            ],
+            "FP": [
+                "FP"
+            ],
+            "TN": [
+                "TN"
+            ],
+            "FN": [
+                "FN"
+            ],
+            "PLR": [
+                "PLR"
+            ],
+            "NLR": [
+                "NLR"
+            ],
+            "F1 Score": [
+                "F1 Score"
+            ],
+            "Youden's Index": [
+                "Youden's Index"
+            ],
+            "Contingency Table: $key": [
+                "Contingency Table: $key"
+            ],
+            "According to Youden's Index": [
+                "According to Youden's Index"
+            ],
+            "Diagnostic accuracy: $key": [
+                "Diagnostic accuracy: $key"
+            ],
+            "Procedure Summary": [
+                "Procedure Summary"
+            ],
+            "Variable": [
+                "Variable"
+            ],
+            "Type": [
+                "Type"
+            ],
+            "Missing": [
+                "Missing"
+            ],
+            "Factor": [
+                "Factor"
+            ],
+            "Numeric": [
+                "Numeric"
+            ],
+            "Contingency Table": [
+                "Contingency Table"
+            ],
+            "Diagnostic Accuracy": [
+                "Diagnostic Accuracy"
+            ],
+            "Relative Risk and Odds Ratio": [
+                "Relative Risk and Odds Ratio"
+            ],
+            "Post-Test Probability": [
+                "Post-Test Probability"
+            ],
+            "Pre-Test Probability": [
+                "Pre-Test Probability"
+            ],
+            "Fagan Nomogram": [
+                "Fagan Nomogram"
+            ],
+            "Sample Size Estimation For Diagnostic Accuracy Studies": [
+                "Sample Size Estimation For Diagnostic Accuracy Studies"
+            ],
+            "Single Test Design, new diagnostic test": [
+                "Single Test Design, new diagnostic test"
+            ],
+            "Single Test Design, comparing the accuracy of a single test to a null value": [
+                "Single Test Design, comparing the accuracy of a single test to a null value"
+            ],
+            "Studies comparing two diagnostic tests": [
+                "Studies comparing two diagnostic tests"
+            ],
+            "Continuity Correction": [
+                "Continuity Correction"
+            ],
+            "ROC with Diagnostics": [
+                "ROC with Diagnostics"
+            ],
+            "Dependent Variable(s)": [
+                "Dependent Variable(s)"
+            ],
+            "Class Variable": [
+                "Class Variable"
+            ],
+            "Event Level": [
+                "Event Level"
+            ],
+            "Compare ROC Curves (DeLong's Test)": [
+                "Compare ROC Curves (DeLong's Test)"
+            ],
+            "Display Diagnostic Accuracy Metrics": [
+                "Display Diagnostic Accuracy Metrics"
+            ],
+            "Coordinates": [
+                "Coordinates"
+            ],
+            "Plots": [
+                "Plots"
+            ],
+            "Display Coordinate Table": [
+                "Display Coordinate Table"
+            ],
+            "Display All Coordinate Points": [
+                "Display All Coordinate Points"
+            ],
+            "Display ROC Curves": [
+                "Display ROC Curves"
+            ],
+            "Combine ROC Curves": [
+                "Combine ROC Curves"
+            ],
+            "True Positive (TP)": [
+                "True Positive (TP)"
+            ],
+            "False Positive (FP)": [
+                "False Positive (FP)"
+            ],
+            "True Negative (TN)": [
+                "True Negative (TN)"
+            ],
+            "False Negative (FN)": [
+                "False Negative (FN)"
+            ],
+            "Coordinate Points": [
+                "Coordinate Points"
+            ],
+            "Reference Line": [
+                "Reference Line"
+            ],
+            "Grid Lines": [
+                "Grid Lines"
+            ],
+            "Width": [
+                "Width"
+            ],
+            "Height": [
+                "Height"
+            ],
+            "Optimal Cut-off Selection": [
+                "Optimal Cut-off Selection"
+            ],
+            "Test Variable": [
+                "Test Variable"
+            ],
+            "Positive Test Level": [
+                "Positive Test Level"
+            ],
+            "Outcome Variable": [
+                "Outcome Variable"
+            ],
+            "Cut-off Coordinates": [
+                "Cut-off Coordinates"
+            ],
+            "Test / Exposure Variable": [
+                "Test / Exposure Variable"
+            ],
+            "Add cut-off": [
+                "Add cut-off"
+            ],
+            "Reference / Disease Variable": [
+                "Reference / Disease Variable"
+            ],
+            "Statistics": [
+                "Statistics"
+            ],
+            "Manual Calculator": [
+                "Manual Calculator"
+            ],
+            "Sample Size Estimation": [
+                "Sample Size Estimation"
+            ],
+            "New diagnostic test": [
+                "New diagnostic test"
+            ],
+            "Compare to a null value": [
+                "Compare to a null value"
+            ],
+            "Compare two tests": [
+                "Compare two tests"
+            ],
+            "Type-1 Error": [
+                "Type-1 Error"
+            ],
+            "Sens or Spec": [
+                "Sens or Spec"
+            ],
+            "Marginal Error": [
+                "Marginal Error"
+            ],
+            "Power": [
+                "Power"
+            ],
+            "Sensitivity (1)": [
+                "Sensitivity (1)"
+            ],
+            "Sensitivity (0)": [
+                "Sensitivity (0)"
+            ],
+            "Specificity (1)": [
+                "Specificity (1)"
+            ],
+            "Specificity (0)": [
+                "Specificity (0)"
+            ],
+            "Proportion 1": [
+                "Proportion 1"
+            ],
+            "Proportion 2": [
+                "Proportion 2"
+            ],
+            "Difference (Ψ_min)": [
+                "Difference (Ψ_min)"
+            ],
+            "Ψ_max": [
+                "Ψ_max"
+            ],
+            "Std. Error": [
+                "Std. Error"
+            ],
+            "Run ROC analysis and assess diagnostic accuracy metrics": [
+                "Run ROC analysis and assess diagnostic accuracy metrics"
+            ],
+            "Assess diagnostic accuracy metrics for selected cut-off points": [
+                "Assess diagnostic accuracy metrics for selected cut-off points"
+            ],
+            "Assess diagnostic accuracy metrics based on the given contingency table": [
+                "Assess diagnostic accuracy metrics based on the given contingency table"
+            ],
+            "Based on optimal cut-off (Youden’s Index)": [
+                "Based on optimal cut-off (Youden’s Index)"
+            ]
+        }
+    },
+    "code": "en"
+}

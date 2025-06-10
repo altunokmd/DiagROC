@@ -1,0 +1,496 @@
+{
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "plural_forms": "nplurals=2; plural=n != 1;",
+                "lang": "tr"
+            },
+            "Sensitivity": [
+                "Sensitivite"
+            ],
+            "Specificity": [
+                "Spesifisite"
+            ],
+            "Positive Likelihood Ratio": [
+                "Pozitif Olabilirlik Oranı"
+            ],
+            "Negative Likelihood Ratio": [
+                "Negatif Olabilirlik Oranı"
+            ],
+            "Prevalence": [
+                "Prevalans"
+            ],
+            "Positive Predictive Value": [
+                "Pozitif Prediktif Değer"
+            ],
+            "Negative Predictive Value": [
+                "Negatif Prediktif Değer"
+            ],
+            "Accuracy": [
+                "Doğruluk"
+            ],
+            "Relative Risk": [
+                "Rölatif Risk"
+            ],
+            "Absolute Risk Reduction (ARR)": [
+                "Mutlak Risk Azalması (ARR)"
+            ],
+            "Relative Risk Reduction (RRR)": [
+                "Rölatif Risk Azalması (RRR)"
+            ],
+            "Number Needed To Treat (NNT)": [
+                "Tedavi İçin Gerekli Sayı (NNT)"
+            ],
+            "Odds Ratio": [
+                "Odds Oranı"
+            ],
+            " (Harm)": [
+                " (Zarar)"
+            ],
+            " (Benefit)": [
+                " (Fayda)"
+            ],
+            "Diagnostic Test Positive": [
+                "Tanısal Test Pozitif"
+            ],
+            "Diagnostic Test Negative": [
+                "Tanısal Test Negatif"
+            ],
+            "Likelihood Ratio": [
+                "Olabilirlik Oranı"
+            ],
+            "Pretest Probability (%)": [
+                "Test Öncesi Olasılık (%)"
+            ],
+            "Posttest Probability (%)": [
+                "Test Sonrası Olasılık (%)"
+            ],
+            "Pretest Prob.": [
+                "Test Öncesi Olasılık"
+            ],
+            "Posttest Positive": [
+                "Test Sonrası Pozitif"
+            ],
+            "Posttest Negative": [
+                "Test Sonrası Negatif"
+            ],
+            "Class variable must have exactly 2 levels.": [
+                "Sınıf değişkeni tam olarak 2 seviyeli olmalı."
+            ],
+            "Selected event level is not valid.": [
+                "Seçilmiş olan seviye geçerli değil."
+            ],
+            "The class variable doesn't have exactly 2 levels in rows where '{col}' is not missing.": [
+                "Sınıf değişkeni, '{col}' ifadesinin eksik olmadığı satırlarda tam olarak 2 seviyeye sahip değildir."
+            ],
+            "ROC Curve": [
+                "ROC Eğrisi"
+            ],
+            "1 - Specificity": [
+                "1 - Spesifisite"
+            ],
+            "Positive if test %s cut-off (direction chosen to maximize AUC).": [
+                "Test %s eşik değer ise pozitif kabul edilir (yön, AUC değerini maksimize edecek şekilde seçilmiştir)."
+            ],
+            "<h4>Procedure Notes</h4>": [
+                "<h4>Prosedür Notları</h4>"
+            ],
+            "<p>Please begin by selecting your test/exposure variable and reference test/disease variable.</p>": [
+                "<p>Lütfen test/maruziyet değişkeninizi ve referans test/hastalık değişkeninizi seçerek başlayın</p>"
+            ],
+            "<p>The test/exposure variable can be of any measurement type. The level selector and cutoff editor will be enabled or disabled automatically based on the variable type.</p>": [
+                "<p>Test/maruziyet değişkeni herhangi bir ölçüm tipinde olabilir. Seviye seçici ve kesme düzenleyici, değişken türüne göre otomatik olarak etkinleştirilecek veya devre dışı bırakılacaktır.</p>"
+            ],
+            "<p>Ordinal variables with more than two levels will be treated as continuous, and require at least one cutoff value to be specified.</p>": [
+                "<p>İkiden fazla düzeyi olan sıralı değişkenler sürekli olarak ele alınacak ve en az bir kesme değerinin belirtilmesini gerektirecektir.</p>"
+            ],
+            "<p>You may define multiple cutoff values for continuous or ordinal test variables.</p>": [
+                "<p>Sürekli veya sıralı test değişkenleri için birden fazla kesme değeri tanımlayabilirsiniz.</p>"
+            ],
+            "<p>Ordinal variables with exactly two levels will be treated as dichotomous.</p>": [
+                "<p>Tam olarak iki seviyeye sahip sıralı değişkenler ikili olarak ele alınacaktır.</p>"
+            ],
+            "Positive": [
+                "Pozitif"
+            ],
+            "Negative": [
+                "Negatif"
+            ],
+            "Reference Test / Disease": [
+                "Referans Test / Hastalık"
+            ],
+            "New Test /<br>Exposure": [
+                "Yeni Test /<br>Maruziyet"
+            ],
+            "Total": [
+                "Toplam"
+            ],
+            "<h3>When to use?</h3>": [
+                "<h3>Ne zaman kullanılır?</h3>"
+            ],
+            "<h3>Comments</h3>": [
+                "<h3>Yorumlar</h3>"
+            ],
+            "<h2>Single Test Design, new diagnostic test</h2>": [
+                "<h2>Tek Test Tasarımı, yeni tanısal test</h2>"
+            ],
+            "<p>This formula is used to estimate the sample size when the new diagnostic test is compared with the reference standard in a cohort where the true disease status and prevalence is known.</p>": [
+                "<p>Bu formül, gerçek hastalık durumu ve prevalansının bilindiği bir kohortta yeni tanı testi referans standart ile karşılaştırıldığında örneklem büyüklüğünü tahmin etmek için kullanılır.</p>"
+            ],
+            "<p><strong>Sens or Spec</strong>: pre-determined value ascertained by previous published data or clinician experience/judgment</p><p><strong>Marginal error</strong>: maximum error of the estimate with a confidence level of 95%.</p><p><strong>Prevalence</strong>: disease prevalence in the study population.</p><p>Estimated sample sizes will be different for the same sensitivity and specificity if the disease prevalence is not 50%, or when the number subjects with and without the disease are not equal.</p>": [
+                "<p><strong>Sensitivite veya Spesifisite</strong>: Önceden yayımlanmış verilerden veya klinisyenin deneyimi/yargısından elde edilen belirlenmiş değer.</p> <p><strong>Marjinal hata</strong>: %95 güven düzeyinde tahminin maksimum hata payı.</p> <p><strong>Prevalans</strong>: Çalışma popülasyonundaki hastalık yaygınlığı (prevalansı).</p> <p>Hastalık prevalansı %50 değilse veya hasta olan ve olmayan bireylerin sayısı eşit değilse, aynı sensitivite ve spesifisite değerleri için tahmin edilen örneklem büyüklükleri farklı olacaktır.</p>"
+            ],
+            "<h2>Single Test Design, comparing the accuracy of a single test to a null value</h2>": [
+                "<h2>Tek Test Tasarımı, tek bir testin doğruluğunun sıfır hipotezine karşı karşılaştırılması</h2>"
+            ],
+            "<p>This formula is used to estimate the sample size when the diagnostic test is compared with the reference standard in a cohort where the true disease status and prevalence is <strong>unknown</strong>.</p><p>After the using the Equations, calculated values should be adjusted according to disease prevelance.</p>": [
+                "<p>Bu formül, gerçek hastalık durumu ve prevalansının <strong>bilinmediği</strong> bir kohortta tanı testi referans standart ile karşılaştırıldığında örneklem büyüklüğünü tahmin etmek için kullanılır.</p><p>Denklemler kullanıldıktan sonra, hesaplanan değerler hastalık prevelansına göre ayarlanmalıdır.</p>"
+            ],
+            "<h2>Studies comparing two diagnostic tests</h2>": [
+                "<h2>İki tanısal testi karşılaştıran çalışmalar</h2>"
+            ],
+            "<h5>Unpaired (between-subjects) design</h5><p>Participants are randomly assigned to either the index or comparator test.</p><h5>Paired (within-subjects) design</h5><p>Two comparator tests are applied to all subjects along with the reference standard</p>": [
+                "<h5>Eşleştirilmemiş (bağımsız gruplar arası) tasarım</h5> <p>Katılımcılar rastgele olarak ya test grubuna ya da karşılaştırma grubuna atanır.</p> <h5>Eşleştirilmiş (birey içi) tasarım</h5> <p>Tüm bireylere iki karşılaştırmalı test ve referans standart birlikte uygulanır.</p>"
+            ],
+            "<p>One-sided N is preferred since we want to test if one of the paths are different than the other</p><p><strong>Ψ (min)</strong> where the disagreement is minimum (P2-P1)</p><p><strong>Ψ (max)</strong> where the agreement is by chance, or disagreement is maximum</p><p>Cont.Correction are the values where the Yates' continuity correction was applied</p>": [
+                "<p>Tek taraflı N tercih edilir çünkü amaç yollar arasında bir fark olup olmadığını test etmektir.</p> <p><strong>Ψ (min)</strong>: En az uyuşmazlık durumu (P2 - P1)</p> <p><strong>Ψ (maks)</strong>: Uyuşmanın rastlantısal olduğu ya da uyuşmazlığın maksimum olduğu durum</p> <p><strong>Süreklilik Düzeltmesi</strong>: Yates'in süreklilik düzeltmesinin uygulandığı değerlerdir.</p>"
+            ],
+            "N(sens)": [
+                "N(sens)"
+            ],
+            "N(spec)": [
+                "N(spec)"
+            ],
+            "N(sens, adjusted)": [
+                "N(sens, düzeltilmiş)"
+            ],
+            "N(spec, adjusted)": [
+                "N(spec, düzeltilmiş)"
+            ],
+            "N(max)": [
+                "N(maks)"
+            ],
+            "Unpaired Design": [
+                "Eşleştirilmemiş Tasarım"
+            ],
+            "Paired Design": [
+                "Eşleştirilmiş Tasarım"
+            ],
+            "N": [
+                "N"
+            ],
+            "N (Total)": [
+                "N (Toplam)"
+            ],
+            "N (Ψ_min)": [
+                "N (Ψ_min)"
+            ],
+            "N (Ψ_max)": [
+                "N (Ψ_max)"
+            ],
+            "Mean": [
+                "Ortalama"
+            ],
+            "diseased": [
+                "hasta"
+            ],
+            "not-diseased": [
+                "hasta değil"
+            ],
+            "total subjects": [
+                "toplam denek"
+            ],
+            "for each group": [
+                "her grup için"
+            ],
+            "for the study": [
+                "çalışma için"
+            ],
+            "for each study": [
+                "her çalışma için"
+            ],
+            "Combined ROC Curves": [
+                "Birleştirilmiş ROC Eğrileri"
+            ],
+            "ROC Curve Summary": [
+                "ROC Eğrisi Özeti"
+            ],
+            "Results": [
+                "Sonuçlar"
+            ],
+            "Result": [
+                "Sonuç"
+            ],
+            "95% CI": [
+                "%95 GA"
+            ],
+            "Lower": [
+                "Alt"
+            ],
+            "Upper": [
+                "Üst"
+            ],
+            "Pairwise AUC Comparisons (DeLong's Test)": [
+                "İkili AUC Karşılaştırmaları (DeLong Testi)"
+            ],
+            "AUC Difference": [
+                "AUC Farkı"
+            ],
+            "Variables": [
+                "Değişkenler"
+            ],
+            "ROC Curve: $key": [
+                "ROC Eğrisi: $key"
+            ],
+            "Cut-off Coordinates: $key": [
+                "Eşik Değerler: $key"
+            ],
+            "Cut-off": [
+                "Eşik Değer"
+            ],
+            "TP": [
+                "GP"
+            ],
+            "FP": [
+                "YP"
+            ],
+            "TN": [
+                "GN"
+            ],
+            "FN": [
+                "YN"
+            ],
+            "PLR": [
+                "PLR"
+            ],
+            "NLR": [
+                "NLR"
+            ],
+            "F1 Score": [
+                "F1 Skoru"
+            ],
+            "Youden's Index": [
+                "Youden İndeksi"
+            ],
+            "Contingency Table: $key": [
+                "Çapraz Tablo: $key"
+            ],
+            "According to Youden's Index": [
+                "Youden İndeksine göre"
+            ],
+            "Diagnostic Accuracy: $key": [
+                "Tanısal Doğruluk: $key"
+            ],
+            "Procedure Summary": [
+                "Prosedür Özeti"
+            ],
+            "Variable": [
+                "Değişken"
+            ],
+            "Type": [
+                "Tip"
+            ],
+            "Factor": [
+                "Faktör"
+            ],
+            "Numeric": [
+                "Sayısal"
+            ],
+            "Missing": [
+                "Eksik Veri"
+            ],
+            "Contingency Table": [
+                "Çapraz Tablo"
+            ],
+            "Diagnostic Accuracy": [
+                "Tanısal Doğruluk"
+            ],
+            "Relative Risk and Odds Ratio": [
+                "Rölatif Risk ve Odds Oranı"
+            ],
+            "Post-Test Probability": [
+                "Test Sonrası Olasılık"
+            ],
+            "Pre-Test Probability": [
+                "Test Öncesi Olasılık"
+            ],
+            "Fagan Nomogram": [
+                "Fagan Nomogramı"
+            ],
+            "Sample Size Estimation For Diagnostic Accuracy Studies": [
+                "Tanısal Doğruluk Çalışmaları İçin Örneklem Büyüklüğü Hesaplama"
+            ],
+            "Single Test Design, new diagnostic test": [
+                "Tek Test Tasarımı, yeni tanısal testi"
+            ],
+            "Single Test Design, comparing the accuracy of a single test to a null value": [
+                "Tek Test Tasarımı, bir testin doğruluğunun sıfır hipotezine karşı karşılaştırılması"
+            ],
+            "Studies comparing two diagnostic tests": [
+                "İki tanı testini karşılaştıran çalışmalar"
+            ],
+            "Continuity Correction": [
+                "Süreklilik Düzeltmesi"
+            ],
+            "ROC Analysis": [
+                "ROC Analizi"
+            ],
+            "Dependent Variable(s)": [
+                "Bağımlı Değişken(ler)"
+            ],
+            "Class Variable": [
+                "Sınıf Değişkeni"
+            ],
+            "Event Level": [
+                "Pozitif Düzey"
+            ],
+            "Compare ROC Curves (DeLong's Test)": [
+                "ROC Eğrilerini Karşılaştır (DeLong's Test)"
+            ],
+            "Display Diagnostic Accuracy Metrics": [
+                "Tanısal Doğruluk Ölçütlerini Göster"
+            ],
+            "Coordinates": [
+                "Koordinatlar"
+            ],
+            "Plots": [
+                "Grafikler"
+            ],
+            "Display Coordinate Table": [
+                "Koordinat Tablosunu Göster"
+            ],
+            "Display All Coordinate Points": [
+                "Tüm Koordinat Noktalarını Göster"
+            ],
+            "Display ROC Curves": [
+                "ROC Eğrilerini Görüntüle"
+            ],
+            "Combine ROC Curves": [
+                "ROC Eğrilerini Birleştir"
+            ],
+            "True Positive (TP)": [
+                "Gerçek Pozitif (GP)"
+            ],
+            "False Positive (FP)": [
+                "Yanlış Pozitif (YP)"
+            ],
+            "True Negative (TN)": [
+                "Gerçek Negatif (GN)"
+            ],
+            "False Negative (FN)": [
+                "Yanlış Negatif (YN)"
+            ],
+            "Coordinate Points": [
+                "Koordinat Noktaları"
+            ],
+            "Reference Line": [
+                "Referans Çizgisi"
+            ],
+            "Grid Lines": [
+                "Izgara Çizgileri"
+            ],
+            "Width": [
+                "Genişlik"
+            ],
+            "Height": [
+                "Yükseklik"
+            ],
+            "Optimal Cut-off Selection": [
+                "Optimum Eşik Seçimi"
+            ],
+            "Test Variable": [
+                "Test Değişkeni"
+            ],
+            "Positive Test Level": [
+                "Pozitif Test Seviyesi"
+            ],
+            "Outcome Variable": [
+                "Sonuç Değişkeni"
+            ],
+            "Cut-off Coordinates": [
+                "Eşik Değerler"
+            ],
+            "Test / Exposure Variable": [
+                "Test / Maruziyet Değişkeni"
+            ],
+            "Add cut-off": [
+                "Eşik değer ekle"
+            ],
+            "Reference / Disease Variable": [
+                "Referans / Hastalık Değişkeni"
+            ],
+            "Statistics": [
+                "İstatistikler"
+            ],
+            "Manual Calculator": [
+                "Manuel Hesaplayıcı"
+            ],
+            "Sample Size Estimation": [
+                "Örneklem Büyüklüğü Hesaplama"
+            ],
+            "New diagnostic test": [
+                "Yeni tanısal test"
+            ],
+            "Compare to a null value": [
+                "Sıfır hipotezi ile karşılaştır"
+            ],
+            "Compare two tests": [
+                "İki testi karşılaştır"
+            ],
+            "Type-1 Error": [
+                "Tip-1 Hata"
+            ],
+            "Sens or Spec": [
+                "Sensitivite veya Spesifisite"
+            ],
+            "Marginal Error": [
+                "Marjinal Hata"
+            ],
+            "Power": [
+                "Güç"
+            ],
+            "Sensitivity (1)": [
+                "Sensitivite (1)"
+            ],
+            "Sensitivity (0)": [
+                "Sensitivite (0)"
+            ],
+            "Specificity (1)": [
+                "Spesifisite (1)"
+            ],
+            "Specificity (0)": [
+                "Spesifisite (0)"
+            ],
+            "Proportion 1": [
+                "Oran 1"
+            ],
+            "Proportion 2": [
+                "Oran 2"
+            ],
+            "Difference (Ψ_min)": [
+                "Fark (Ψ_min)"
+            ],
+            "Ψ_max": [
+                "Ψ_max"
+            ],
+            "Std. Error": [
+                "Std. Hata"
+            ],
+            "Run ROC analysis and assess diagnostic accuracy metrics": [
+                "ROC analizi gerçekleştir ve tanısal doğruluk ölçütlerini değerlendir"
+            ],
+            "Assess diagnostic accuracy metrics for selected cut-off points": [
+                "Seçilen eşik değerler için tanısal doğruluk ölçütlerini değerlendir"
+            ],
+            "Assess diagnostic accuracy metrics based on the given contingency table": [
+                "Verilen çapraz tabloya göre tanısal doğruluk ölçütlerini değerlendir"
+            ],
+            "Based on optimal cut-off (Youden’s Index)": [
+                "Optimum eşik değere göre (Youden indeksi)"
+            ]
+        }
+    },
+    "code": "tr"
+}
