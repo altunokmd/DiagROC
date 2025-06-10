@@ -1,0 +1,43 @@
+---
+name:  manual
+title: Manual Calculator
+menuGroup: DiagROC
+version: '1.0.0'
+jas: '1.2'
+
+options:
+  - type: Number
+    name: tp
+    default: 95
+  - type: Number
+    name: fp
+    default: 5
+  - type: Number
+    name: fn
+    default: 20
+  - type: Number
+    name: tn
+    default: 80
+  - type: Bool
+    name: diagnostic
+    title: Diagnostic Accuracy
+    default: true
+  - type: Bool
+    name: relative
+    title: Relative Risk and Odds Ratio
+    default: false
+  - type: Bool
+    name: posttest
+    title: Post-Test Probability
+    default: false
+  - type: Number
+    name: pretest
+    title: Pre-Test Probability
+    min: 0
+    max: 100
+    default: 10
+  - type: Bool
+    name: fagan
+    title: Fagan Nomogram
+    default: false
+...

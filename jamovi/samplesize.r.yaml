@@ -1,0 +1,70 @@
+---
+name:  samplesize
+title: Sample Size Estimation For Diagnostic Accuracy Studies
+jrs:   '1.1'
+
+items:
+  - name: whentouse
+    type: Html
+  - name:  snewresult
+    title: 'Single Test Design, new diagnostic test'
+    type:  Table
+    rows: 2
+    visible: (mode == 'singlenew')
+    refs:
+      - akoglu
+    columns:
+      - name: text
+        type: text
+        title: ''
+      - name: n
+        type: integer
+        title: N
+  - name:  snullresult
+    title: 'Single Test Design, comparing the accuracy of a single test to a null value'
+    type:  Table
+    rows: 5
+    visible: (mode == 'singlenull')
+    refs:
+      - akoglu
+    columns:
+      - name: text
+        type: text
+        title: ''
+      - name: cap
+        type: text
+        title: ''
+      - name: n
+        type: integer
+        title: N
+      - name: ncont
+        type: integer
+        title: Continuity Correction
+  - name:  compresult
+    title: 'Studies comparing two diagnostic tests'
+    type:  Table
+    rows: 5
+    visible: (mode == 'comparetwo')
+    refs:
+      - akoglu
+    columns:
+      - name: text1
+        type: text
+        title: ''
+        combineBelow: true
+      - name: text2
+        type: text
+        title: ''
+      - name: cap
+        type: text
+        title: ''
+      - name: n
+        type: integer
+        title: N
+      - name: ncont
+        type: integer
+        title: Continuity Correction
+  - name: comments
+    type: Html
+
+...

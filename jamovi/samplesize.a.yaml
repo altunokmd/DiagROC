@@ -1,0 +1,153 @@
+---
+name:  samplesize
+title: Sample Size Estimation
+menuGroup: DiagROC
+version: '1.0.0'
+jas: '1.2'
+
+options:
+  - name: mode
+    title: ""
+    type: List
+    options: 
+      - name: singlenew
+        title: New diagnostic test
+      - name: singlenull
+        title: Compare to a null value
+      - name: comparetwo
+        title: Compare two tests
+    default: singlenew
+  - name: alpha_snew
+    type: List
+    title: Type-1 Error
+    options:
+      - name: "0.01"
+        title: "1%"
+      - name: "0.05"
+        title: "5%"
+      - name: "0.1"
+        title: "10%"
+    default: "0.05"
+  - name: ss_snew
+    type: Number
+    title: Sens or Spec
+    min: 0
+    max: 100
+    default: 50
+  - name: prev_snew
+    type: Number
+    title: Prevalence
+    min: 0
+    max: 100
+    default: 30
+  - name: me_snew
+    type: Number
+    title: Marginal Error
+    min: 0
+    max: 100
+    default: 10
+
+  - name: power_snull
+    type: List
+    title: Power
+    options:
+      - name: "0.8"
+        title: "80%"
+      - name: "0.9"
+        title: "90%"
+      - name: "0.95"
+        title: "95%"
+      - name: "0.99"
+        title: "99%"
+      - name: "1"
+        title: "100%"
+    default: "0.99"
+  - name: alpha_snull
+    type: List
+    title: Type-1 Error
+    options:
+      - name: "0.01"
+        title: "1%"
+      - name: "0.05"
+        title: "5%"
+      - name: "0.1"
+        title: "10%"
+    default: "0.05"
+  - name: sens1_snull
+    type: Number
+    title: Sensitivity (1)
+    min: 0
+    max: 100
+    default: 95
+  - name: sens0_snull
+    type: Number
+    title: Sensitivity (0)
+    min: 0
+    max: 100
+    default: 90
+  - name: spec1_snull
+    type: Number
+    title: Specificity (1)
+    min: 0
+    max: 100
+    default: 85
+  - name: spec0_snull
+    type: Number
+    title: Specificity (0)
+    min: 0
+    max: 100
+    default: 80
+  - name: prev_snull
+    type: Number
+    title: Prevalence
+    min: 0
+    max: 100
+    default: 30
+
+  - name: power_comp
+    type: List
+    title: Power
+    options:
+      - name: "0.8"
+        title: "80%"
+      - name: "0.9"
+        title: "90%"
+      - name: "0.95"
+        title: "95%"
+      - name: "0.99"
+        title: "99%"
+      - name: "1"
+        title: "100%"
+    default: "0.8"
+  - name: alpha_comp
+    type: List
+    title: Type-1 Error
+    options:
+      - name: "0.01"
+        title: "1%"
+      - name: "0.05"
+        title: "5%"
+      - name: "0.1"
+        title: "10%"
+    default: "0.01"
+  - name: prop1_comp
+    type: Number
+    title: Proportion 1
+    min: 0
+    max: 100
+    default: 95
+  - name: prop2_comp
+    type: Number
+    title: Proportion 2
+    min: 0
+    max: 100
+    default: 80
+  - name: dismin_comp
+    type: Number
+    title: Difference (Ψ_min)
+    default: 15
+  - name: dismax_comp
+    type: Number
+    title: Ψ max
+    default: 23
+...

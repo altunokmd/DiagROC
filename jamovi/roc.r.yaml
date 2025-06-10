@@ -1,0 +1,220 @@
+---
+name: roc
+title: ROC Analysis
+jrs: '1.1'
+
+items:
+  - name: combinedCurve
+    type: Image
+    title: Combined ROC Curves
+    visible: (displayCurves && combineCurves)
+    clearWith: 
+      - deps
+      - classVar
+      - eventLevel
+      - cPoints
+      - cABLine
+      - cGridLine
+      - pWidth
+      - pHeight
+    width: 450
+    height: 350
+    renderFun: .plot
+
+  - name: auc
+    title: ROC Curve Summary
+    type: Table
+    rows: (deps)
+    refs: proc
+    clearWith:
+      - classVar
+      - eventLevel
+    columns: 
+      - name: var
+        title: ''
+        type: text
+        content: ($key)
+      - name: area
+        title: AUC
+        type: number
+      - name: se
+        title: Std. Error
+        type: number
+      - name: lowerCi
+        title: Lower
+        type: number
+        superTitle: 95% CI
+      - name: upperCi
+        title: Upper
+        type: number
+        superTitle: 95% CI
+      - name: p
+        title: p
+        type: number
+        format: zto,pvalue
+
+  - name: delong
+    type: Table
+    title: Pairwise AUC Comparisons (DeLong's Test)
+    rows: 0
+    refs: proc
+    visible: false
+    clearWith:
+      - deps
+      - classVar
+    columns: 
+      - name: pair
+        title: ''
+        type: text
+      - name: diff
+        title: AUC Difference
+        type: number
+      - name: ci.l
+        title: Lower
+        superTitle: 95% CI
+        type: number
+      - name: ci.u
+        title: Upper
+        superTitle: 95% CI
+        type: number
+      - name: stat
+        title: z
+        type: number
+      - name: p
+        title: p
+        type: number
+        format: pvalue
+
+  - name: varStats
+    type: Array
+    items: (deps)
+    title: Variables
+    clearWith: 
+      - showAllCoords
+    template:
+      type: Group
+      name: ($key)
+      title: ($key)
+      items: 
+        - name: curve
+          visible: (displayCurves && !combineCurves)
+          type: Image
+          title: "ROC Curve: $key"
+          width: 450
+          height: 350
+          renderFun: .plot
+          clearWith: 
+            - cPoints
+            - cABLine
+            - cGridLine
+            - pWidth
+            - pHeight
+
+        - name: coords
+          title: "Cut-off Coordinates: $key"
+          type: Table
+          rows: 0
+          visible: (showCoords)
+          clearWith: 
+            - classVar
+            - event
+          columns: 
+            - name: threshold
+              title: Cut-off
+              type: text
+            - name: sensitivity
+              title: Sensitivity
+              type: number
+              format: pc
+            - name: specificity
+              title: Specificity
+              type: number
+              format: pc
+            - name: tp
+              title: TP
+              type: integer
+              visible: (cTP)
+            - name: fp
+              title: FP
+              type: integer
+              visible: (cFP)
+            - name: tn
+              title: TN
+              type: integer
+              visible: (cTN)
+            - name: fn
+              title: FN
+              type: integer
+              visible: (cFN)
+            - name: ppv
+              title: PPV
+              type: number
+              visible: (cPPV)
+              format: pc
+            - name: npv
+              title: NPV
+              type: number
+              visible: (cNPV)
+              format: pc
+            - name: plr
+              title: PLR
+              type: number
+              visible: (cPLR)
+            - name: nlr
+              title: NLR
+              type: number
+              visible: (cNLR)
+            - name: acc
+              title: Accuracy
+              type: number
+              visible: (cAcc)
+              format: pc
+            - name: prev
+              title: Prevalence
+              type: number
+              visible: (cPrev)
+              format: pc
+            - name: f1
+              title: F1 Score
+              type: number
+              visible: (cF1)
+            - name: youden
+              title: Youden's Index
+              type: number
+
+        - name: contingency
+          type: Table
+          rows: 3
+          title: "Contingency Table: $key"
+          visible: (showDiagnostics && !is.null(classVar))
+          columns: []
+          clearWith: 
+            - classVar
+            - event
+          notes: 
+            m: Based on optimal cut-off (Youden’s Index)
+
+        - name: diagnostics
+          title: "Diagnostic Accuracy: $key"
+          type: Table
+          visible: (showDiagnostics && !is.null(classVar))
+          rows: 8
+          clearWith: 
+            - classVar
+            - event
+          columns: 
+            - name: text
+              type: text
+              title: ''
+            - name: result
+              type: text
+              title: Result
+            - name: ci.l
+              type: text
+              title: Lower
+              superTitle: 95% CI
+            - name: ci.u
+              type: text
+              title: Upper
+              superTitle: 95% CI
+...

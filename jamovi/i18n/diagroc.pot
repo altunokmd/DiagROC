@@ -1,0 +1,713 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-05-26 14:37+0300\n"
+"PO-Revision-Date: 2025-05-26 14:37+0300\n"
+"Language: c\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: R/tables.R
+#: R/roc.b.R
+#: roc/results/varStats.template.coords.columns.title
+msgid "Sensitivity"
+msgstr ""
+
+#: R/tables.R
+#: R/roc.b.R
+#: roc/results/varStats.template.coords.columns.title
+msgid "Specificity"
+msgstr ""
+
+#: R/tables.R
+#: roc.cPLR.title
+msgid "Positive Likelihood Ratio"
+msgstr ""
+
+#: R/tables.R
+#: roc.cNLR.title
+msgid "Negative Likelihood Ratio"
+msgstr ""
+
+#: R/tables.R
+#: roc/results/varStats.template.coords.columns.title
+#: roc.cPrev.title
+msgid "Prevalence"
+msgstr ""
+
+#: R/tables.R
+#: roc.cPPV.title
+msgid "Positive Predictive Value"
+msgstr ""
+
+#: R/tables.R
+#: roc.cNPV.title
+msgid "Negative Predictive Value"
+msgstr ""
+
+#: R/tables.R
+#: roc/results/varStats.template.coords.columns.title
+#: roc.cAcc.title
+msgid "Accuracy"
+msgstr ""
+
+#: R/tables.R
+msgid "Relative Risk"
+msgstr ""
+
+#: R/tables.R
+msgid "Absolute Risk Reduction (ARR)"
+msgstr ""
+
+#: R/tables.R
+msgid "Relative Risk Reduction (RRR)"
+msgstr ""
+
+#: R/tables.R
+msgid "Number Needed To Treat (NNT)"
+msgstr ""
+
+#: R/tables.R
+msgid "Odds Ratio"
+msgstr ""
+
+#: R/tables.R
+msgid " (Harm)"
+msgstr ""
+
+#: R/tables.R
+msgid " (Benefit)"
+msgstr ""
+
+#: R/tables.R
+msgid "Diagnostic Test Positive"
+msgstr ""
+
+#: R/tables.R
+msgid "Diagnostic Test Negative"
+msgstr ""
+
+#: R/tables.R
+msgid "Likelihood Ratio"
+msgstr ""
+
+#: R/tables.R
+msgid "Pretest Probability (%)"
+msgstr ""
+
+#: R/tables.R
+msgid "Posttest Probability (%)"
+msgstr ""
+
+#: R/tables.R
+msgid "Pretest Prob."
+msgstr ""
+
+#: R/tables.R
+msgid "Posttest Positive"
+msgstr ""
+
+#: R/tables.R
+msgid "Posttest Negative"
+msgstr ""
+
+#: R/roc.b.R
+msgid "Class variable must have exactly 2 levels."
+msgstr ""
+
+#: R/roc.b.R
+msgid "Selected event level is not valid."
+msgstr ""
+
+#: R/roc.b.R
+msgid "The class variable doesn't have exactly 2 levels in rows where '{col}' is not missing."
+msgstr ""
+
+#: R/roc.b.R
+msgid "ROC Curve"
+msgstr ""
+
+#: R/roc.b.R
+msgid "1 - Specificity"
+msgstr ""
+
+#: R/roc.b.R
+msgid "Positive if test %s cut-off (direction chosen to maximize AUC)."
+msgstr ""
+
+#: R/cutoff.b.R
+msgid "<h4>Procedure Notes</h4>"
+msgstr ""
+
+#: R/cutoff.b.R
+msgid "<p>Please begin by selecting your test/exposure variable and reference test/disease variable.</p>"
+msgstr ""
+
+#: R/cutoff.b.R
+msgid "<p>The test/exposure variable can be of any measurement type. The level selector and cutoff editor will be enabled or disabled automatically based on the variable type.</p>"
+msgstr ""
+
+#: R/cutoff.b.R
+msgid "<p>Ordinal variables with more than two levels will be treated as continuous, and require at least one cutoff value to be specified.</p>"
+msgstr ""
+
+#: R/cutoff.b.R
+msgid "<p>You may define multiple cutoff values for continuous or ordinal test variables.</p>"
+msgstr ""
+
+#: R/cutoff.b.R
+msgid "<p>Ordinal variables with exactly two levels will be treated as dichotomous.</p>"
+msgstr ""
+
+#: R/cutoff.b.R
+#: R/manual.b.R
+#: manual/results/contingency.columns.title
+msgid "Positive"
+msgstr ""
+
+#: R/manual.b.R
+#: manual/results/contingency.columns.title
+msgid "Negative"
+msgstr ""
+
+#: R/cutoff.b.R
+#: manual/results/contingency.columns.title
+msgid "Reference Test / Disease"
+msgstr ""
+
+#: R/cutoff.b.R
+#: R/manual.b.R
+msgid "New Test /<br>Exposure"
+msgstr ""
+
+#: R/manual.b.R
+msgid "Total"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "<h3>When to use?</h3>"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "<h3>Comments</h3>"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "<h2>Single Test Design, new diagnostic test</h2>"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "<p>This formula is used to estimate the sample size when the new diagnostic test is compared with the reference standard in a cohort where the true disease status and prevalence is known.</p>"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "<p><strong>Sens or Spec</strong>: pre-determined value ascertained by previous published data or clinician experience/judgment</p>"
+"<p><strong>Marginal error</strong>: maximum error of the estimate with a confidence level of 95%.</p>"
+"<p><strong>Prevalence</strong>: disease prevalence in the study population.</p>"
+"<p>Estimated sample sizes will be different for the same sensitivity and specificity if the disease prevalence is not 50%, or when the number subjects with and without the disease are not equal.</p>"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "<h2>Single Test Design, comparing the accuracy of a single test to a null value</h2>"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "<p>This formula is used to estimate the sample size when the diagnostic test is compared with the reference standard in a cohort where the true disease status and prevalence is <strong>unknown</strong>.</p>"
+"<p>After the using the Equations, calculated values should be adjusted according to disease prevelance.</p>"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "<h2>Studies comparing two diagnostic tests</h2>"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "<h5>Unpaired (between-subjects) design</h5>"
+"<p>Participants are randomly assigned to either the index or comparator test.</p>"
+"<h5>Paired (within-subjects) design</h5>"
+"<p>Two comparator tests are applied to all subjects along with the reference standard</p>"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "<p>One-sided N is preferred since we want to test if one of the paths are different than the other</p>"
+"<p><strong>Ψ (min)</strong> where the disagreement is minimum (P2-P1)</p>"
+"<p><strong>Ψ (max)</strong> where the agreement is by chance, or disagreement is maximum</p>"
+"<p>Cont.Correction are the values where the Yates' continuity correction was applied</p>"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "N(sens)"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "N(spec)"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "N(sens, adjusted)"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "N(spec, adjusted)"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "N(max)"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "Unpaired Design"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "Paired Design"
+msgstr ""
+
+#: R/samplesize.b.R
+#: cutoff/results/summary.columns.title
+msgid "N"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "N (Total)"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "N (Ψ_min)"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "N (Ψ_max)"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "Mean"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "diseased"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "not-diseased"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "total subjects"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "for each group"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "for the study"
+msgstr ""
+
+#: R/samplesize.b.R
+msgid "for each study"
+msgstr ""
+
+#: roc/results/combinedCurve.title
+msgid "ROC Curves Combined"
+msgstr ""
+
+#: roc/results/auc.title
+msgid "ROC Curve Summary"
+msgstr ""
+
+#: cutoff/results/cutoffs.title
+msgid "Results"
+msgstr ""
+
+#: roc/results/varStats.template.diagnostics.columns.title
+#: cutoff/results/cutoffs.template.diagnostics.columns.title
+#: manual/results/diagnostics.columns.title
+msgid "Result"
+msgstr ""
+
+#: roc/results/auc.columns.title
+#: roc/results/delong.columns.title
+#: roc/results/varStats.template.diagnostics.columns.title
+#: cutoff/results/cutoffs.template.diagnostics.columns.title
+#: cutoff/results/cutoffs.template.relative.columns.title
+#: manual/results/diagnostics.columns.title
+msgid "95% CI"
+msgstr ""
+
+#: roc/results/auc.columns.title
+#: roc/results/delong.columns.title
+#: roc/results/varStats.template.diagnostics.columns.title
+#: cutoff/results/cutoffs.template.diagnostics.columns.title
+#: manual/results/diagnostics.columns.title
+msgid "Lower"
+msgstr ""
+
+#: roc/results/auc.columns.title
+#: roc/results/delong.columns.title
+#: roc/results/varStats.template.diagnostics.columns.title
+#: cutoff/results/cutoffs.template.diagnostics.columns.title
+msgid "Upper"
+msgstr ""
+
+#: roc/results/delong.title
+msgid "Pairwise AUC Comparisons (DeLong's Test)"
+msgstr ""
+
+#: roc/results/delong.columns.title
+msgid "AUC Difference"
+msgstr ""
+
+#: roc/results/varStats.title
+msgid "Variables"
+msgstr ""
+
+#: roc/results/varStats.template.curve.title
+msgid "ROC Curve: $key"
+msgstr ""
+
+#: roc/results/varStats.template.coords.title
+msgid "Cut-off Coordinates: $key"
+msgstr ""
+
+#: roc/results/varStats.template.coords.columns.title
+msgid "Cut-off"
+msgstr ""
+
+#: roc/results/varStats.template.coords.columns.title
+msgid "TP"
+msgstr ""
+
+#: roc/results/varStats.template.coords.columns.title
+msgid "FP"
+msgstr ""
+
+#: roc/results/varStats.template.coords.columns.title
+msgid "TN"
+msgstr ""
+
+#: roc/results/varStats.template.coords.columns.title
+msgid "FN"
+msgstr ""
+
+#: roc/results/varStats.template.coords.columns.title
+msgid "PLR"
+msgstr ""
+
+#: roc/results/varStats.template.coords.columns.title
+msgid "NLR"
+msgstr ""
+
+#: roc/results/varStats.template.coords.columns.title
+#: roc.cF1.title
+msgid "F1 Score"
+msgstr ""
+
+#: roc/results/varStats.template.coords.columns.title
+msgid "Youden's Index"
+msgstr ""
+
+#: roc/results/varStats.template.contingency.title
+msgid "Contingency Table: $key"
+msgstr ""
+
+#: roc/results/varStats.template.contingency.notes.m
+msgid "According to Youden's Index"
+msgstr ""
+
+#: roc/results/varStats.template.diagnostics.title
+msgid "Diagnostic accuracy: $key"
+msgstr ""
+
+#: cutoff/results/summary.title
+msgid "Procedure Summary"
+msgstr ""
+
+#: cutoff/results/summary.columns.title
+msgid "Variable"
+msgstr ""
+
+#: cutoff/results/summary.columns.title
+msgid "Type"
+msgstr ""
+
+#: cutoff/results/summary.columns.title
+msgid "Missing"
+msgstr ""
+
+#: cutoff.b.R
+msgid "Factor"
+msgstr ""
+
+#: cutoff.b.R
+msgid "Numeric"
+msgstr ""
+
+#: cutoff/results/cutoffs.template.contingency.title
+#: manual/results/contingency.title
+msgid "Contingency Table"
+msgstr ""
+
+#: cutoff.diagnostic.title
+#: manual.diagnostic.title
+#: cutoff/results/cutoffs.template.diagnostics.title
+#: manual/results/diagnostics.title
+msgid "Diagnostic Accuracy"
+msgstr ""
+
+#: cutoff.relative.title
+#: manual.relative.title
+#: cutoff/results/cutoffs.template.relative.title
+#: manual/results/relative.title
+msgid "Relative Risk and Odds Ratio"
+msgstr ""
+
+#: cutoff.posttest.title
+#: manual.posttest.title
+#: cutoff/results/cutoffs.template.posttest.title
+#: manual/results/posttest.title
+msgid "Post-Test Probability"
+msgstr ""
+
+#: cutoff.pretest.title
+#: manual.pretest.title
+msgid "Pre-Test Probability"
+msgstr ""
+
+#: cutoff.fagan.title
+#: manual.fagan.title
+#: cutoff/results/cutoffs.template.fagan.title
+#: manual/results/fagan.title
+msgid "Fagan Nomogram"
+msgstr ""
+
+#: samplesize.results.title
+msgid "Sample Size Estimation For Diagnostic Accuracy Studies"
+msgstr ""
+
+#: samplesize/results/snewresult.title
+msgid "Single Test Design, new diagnostic test"
+msgstr ""
+
+#: samplesize/results/snullresult.title
+msgid "Single Test Design, comparing the accuracy of a single test to a null value"
+msgstr ""
+
+#: samplesize/results/compresult.title
+msgid "Studies comparing two diagnostic tests"
+msgstr ""
+
+#: samplesize/results/snullresult.columns.title
+#: samplesize/results/compresult.columns.title
+msgid "Continuity Correction"
+msgstr ""
+
+#: roc.title
+msgid "ROC Analysis"
+msgstr ""
+
+#: roc.deps.title
+msgid "Dependent Variable(s)"
+msgstr ""
+
+#: roc.classVar.title
+msgid "Class Variable"
+msgstr ""
+
+#: roc.eventLevel.title
+#: cutoff.event.title
+msgid "Event Level"
+msgstr ""
+
+#: roc.compareRoc.title
+msgid "Compare ROC Curves (DeLong's Test)"
+msgstr ""
+
+#: roc.showDiagnostics.title
+msgid "Display Diagnostic Accuracy Metrics"
+msgstr ""
+
+#: roc.collapsebox[0].title
+msgid "Coordinates"
+msgstr ""
+
+#: roc.collapsebox[1].title
+msgid "Plots"
+msgstr ""
+
+#: roc.showCoords.title
+msgid "Display Coordinate Table"
+msgstr ""
+
+#: roc.showAllCoords.title
+msgid "Display All Coordinate Points"
+msgstr ""
+
+#: roc.displayCurves.title
+msgid "Display ROC Curves"
+msgstr ""
+
+#: roc.combineCurves.title
+msgid "Combine ROC Curves"
+msgstr ""
+
+#: roc.cTP.title
+msgid "True Positive (TP)"
+msgstr ""
+
+#: roc.cFP.title
+msgid "False Positive (FP)"
+msgstr ""
+
+#: roc.cTN.title
+msgid "True Negative (TN)"
+msgstr ""
+
+#: roc.cFN.title
+msgid "False Negative (FN)"
+msgstr ""
+
+#: roc.cPoints.title
+msgid "Coordinate Points"
+msgstr ""
+
+#: roc.cABLine.title
+msgid "Reference Line"
+msgstr ""
+
+#: roc.cGridLine.title
+msgid "Grid Lines"
+msgstr ""
+
+#: roc.pWidth.title
+msgid "Width"
+msgstr ""
+
+#: roc.pHeight.title
+msgid "Height"
+msgstr ""
+
+#: cutoff.title
+msgid "Optimal Cut-off Selection"
+msgstr ""
+
+#: cutoff.dep.title
+msgid "Test Variable"
+msgstr ""
+
+#: cutoff.testpos.title
+msgid "Positive Test Level"
+msgstr ""
+
+#: cutoff.classVar.title
+msgid "Outcome Variable"
+msgstr ""
+
+#: cutoff.cutoffs.title
+msgid "Cut-off Coordinates"
+msgstr ""
+
+#: cutoff.ui[0][0].label
+msgid "Test / Exposure Variable"
+msgstr ""
+
+#: cutoff.ui[0][1][0].addButton
+msgid "Add cut-off"
+msgstr ""
+
+#: cutoff.ui[0][2].label
+msgid "Reference / Disease Variable"
+msgstr ""
+
+#: cutoff.ui[1].label
+msgid "Statistics"
+msgstr ""
+
+#: manual.title
+msgid "Manual Calculator"
+msgstr ""
+
+#: samplesize.menutitle
+msgid "Sample Size Estimation"
+msgstr ""
+
+#: samplesize.ui[0].options[0].label
+msgid "New diagnostic test"
+msgstr ""
+
+#: samplesize.ui[0].options[1].label
+msgid "Compare to a null value"
+msgstr ""
+
+#: samplesize.ui[0].options[2].label
+msgid "Compare two tests"
+msgstr ""
+
+#: samplesize.ui.alpha_snew.title
+#: samplesize.ui.alpha_snull.title
+msgid "Type-1 Error"
+msgstr ""
+
+#: samplesize.ui.ss_snew.title
+msgid "Sens or Spec"
+msgstr ""
+
+#: samplesize.ui.me_snew.title
+msgid "Marginal Error"
+msgstr ""
+
+#: samplesize.ui.power_snull.title
+msgid "Power"
+msgstr ""
+
+#: samplesize.ui.sens1_snull.title
+msgid "Sensitivity (1)"
+msgstr ""
+
+#: samplesize.ui.sens0_snull.title
+msgid "Sensitivity (0)"
+msgstr ""
+
+#: samplesize.ui.spec1_snull.title
+msgid "Specificity (1)"
+msgstr ""
+
+#: samplesize.ui.spec0_snull.title
+msgid "Specificity (0)"
+msgstr ""
+
+#: samplesize.ui.prop1_comp.title
+msgid "Proportion 1"
+msgstr ""
+
+#: samplesize.ui.prop2_comp.title
+msgid "Proportion 2"
+msgstr ""
+
+#: samplesize.ui.dismin_comp.title
+msgid "Difference (Ψ_min)"
+msgstr ""
+
+#: samplesize.ui.dismax_comp.title
+msgid "Ψ_max"
+msgstr ""
+
+#: roc.results.auc.columns.title
+msgid "Std. Error"
+msgstr ""
+
+#: roc.menu.subtitle
+msgid "Run ROC analysis and assess diagnostic accuracy metrics"
+msgstr ""
+
+#: cutoff.menu.subtitle
+msgid "Assess diagnostic accuracy metrics for selected cut-off points"
+msgstr ""
+
+#: manual.menu.subtitle
+msgid "Assess diagnostic accuracy metrics based on the given contingency table"
+msgstr ""
+
+#: roc.varStats.contingency.note
+msgid "Based on optimal cut-off (Youden’s Index)"
+msgstr ""

@@ -1,0 +1,17 @@
+---
+refs:
+  proc:
+    type: 'software'
+    author: Robin, X., Turck, N., Hainard, A., Tiberti, N., Lisacek, F., Sanchez, JC., Müller, M., Siegert, S., Doering, M., Billings, Z.
+    year: 2023
+    title: 'pROC: Display and Analyze ROC Curves'
+    publisher: '[R Package]. Retrieved from https://cran.r-project.org/package=pROC'
+    url: https://cran.r-project.org/package=pROC
+  akoglu:
+    type: 'article'
+    author: Akoğlu, H.
+    year: 2022
+    title: User's guide to sample size estimation in diagnostic accuracy studies
+    publisher: Turk J Emerg Med 22:177-85
+    url: https://turkjemergmed.com/abstract/811
+...

@@ -1,0 +1,52 @@
+---
+title: ROC Analysis with Diagnostic Accuracy Tools
+name: DiagROC
+version: 0.9.3
+jms: '1.0'
+authors:
+  - İbrahim Altunok
+maintainer: İbrahim Altunok <ibrahim@altunok.md>
+date: '2025-06-01'
+type: R
+description: >-
+  A module for ROC analysis extended with diagnostic accuracy metrics. This
+  module allows users to perform one or more ROC analyses along with diagnostic
+  accuracy assessments using the optimal threshold based on Youden's Index. It
+  also enables the selection of one or more custom coordinate points for a
+  variable, and includes a comprehensive manual calculator. For feature
+  requests  or reporting bugs, please visit the project's <a
+  href="https://github.com/altunokmd/DiagROC" target="_blank">GitHub
+  Repository</a>
+analyses:
+  - title: ROC Analysis
+    name: roc
+    ns: DiagROC
+    menuGroup: DiagROC
+    menuTitle: ROC Analysis
+    menuSubtitle: Run ROC analysis and assess diagnostic accuracy metrics
+    category: analyses
+  - title: Optimal Cut-off Selection
+    name: cutoff
+    ns: DiagROC
+    menuGroup: DiagROC
+    menuTitle: Optimal Cut-off Selection
+    menuSubtitle: Assess diagnostic accuracy metrics for selected cut-off points
+    category: analyses
+  - title: Manual Calculator
+    name: manual
+    ns: DiagROC
+    menuGroup: DiagROC
+    menuTitle: Manual Calculator
+    menuSubtitle: Assess diagnostic accuracy metrics based on the given contingency table
+    category: analyses
+  - title: Sample Size Estimation
+    name: samplesize
+    ns: DiagROC
+    menuGroup: DiagROC
+    menuTitle: Sample Size Estimation
+    menuSubtitle: Sample Size Estimation For Diagnostic Accuracy Studies
+    category: analyses
+usesNative: true
+minApp: 1.0.8
+
+...

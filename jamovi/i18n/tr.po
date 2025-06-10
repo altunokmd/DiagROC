@@ -1,0 +1,782 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-06-10 14:31+0300\n"
+"PO-Revision-Date: 2025-06-10 15:00+0300\n"
+"Last-Translator: İbrahim Altunok\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: R/tables.R
+#: R/roc.b.R
+#: roc/results/varStats.template.coords.columns.title
+msgid "Sensitivity"
+msgstr "Sensitivite"
+
+#: R/tables.R
+#: R/roc.b.R
+#: roc/results/varStats.template.coords.columns.title
+msgid "Specificity"
+msgstr "Spesifisite"
+
+#: R/tables.R
+#: roc.cPLR.title
+msgid "Positive Likelihood Ratio"
+msgstr "Pozitif Olabilirlik Oranı"
+
+#: R/tables.R
+#: roc.cNLR.title
+msgid "Negative Likelihood Ratio"
+msgstr "Negatif Olabilirlik Oranı"
+
+#: R/tables.R
+#: roc/results/varStats.template.coords.columns.title
+#: roc.cPrev.title
+msgid "Prevalence"
+msgstr "Prevalans"
+
+#: R/tables.R
+#: roc.cPPV.title
+msgid "Positive Predictive Value"
+msgstr "Pozitif Prediktif Değer"
+
+#: R/tables.R
+#: roc.cNPV.title
+msgid "Negative Predictive Value"
+msgstr "Negatif Prediktif Değer"
+
+#: R/tables.R
+#: roc/results/varStats.template.coords.columns.title
+#: roc.cAcc.title
+msgid "Accuracy"
+msgstr "Doğruluk"
+
+#: R/tables.R
+msgid "Relative Risk"
+msgstr "Rölatif Risk"
+
+#: R/tables.R
+msgid "Absolute Risk Reduction (ARR)"
+msgstr "Mutlak Risk Azalması (ARR)"
+
+#: R/tables.R
+msgid "Relative Risk Reduction (RRR)"
+msgstr "Rölatif Risk Azalması (RRR)"
+
+#: R/tables.R
+msgid "Number Needed To Treat (NNT)"
+msgstr "Tedavi İçin Gerekli Sayı (NNT)"
+
+#: R/tables.R
+msgid "Odds Ratio"
+msgstr "Odds Oranı"
+
+#: R/tables.R
+msgid " (Harm)"
+msgstr " (Zarar)"
+
+#: R/tables.R
+msgid " (Benefit)"
+msgstr " (Fayda)"
+
+#: R/tables.R
+msgid "Diagnostic Test Positive"
+msgstr "Tanısal Test Pozitif"
+
+#: R/tables.R
+msgid "Diagnostic Test Negative"
+msgstr "Tanısal Test Negatif"
+
+#: R/tables.R
+msgid "Likelihood Ratio"
+msgstr "Olabilirlik Oranı"
+
+#: R/tables.R
+msgid "Pretest Probability (%)"
+msgstr "Test Öncesi Olasılık (%)"
+
+#: R/tables.R
+msgid "Posttest Probability (%)"
+msgstr "Test Sonrası Olasılık (%)"
+
+#: R/tables.R
+msgid "Pretest Prob."
+msgstr "Test Öncesi Olasılık"
+
+#: R/tables.R
+msgid "Posttest Positive"
+msgstr "Test Sonrası Pozitif"
+
+#: R/tables.R
+msgid "Posttest Negative"
+msgstr "Test Sonrası Negatif"
+
+#: R/roc.b.R
+msgid "Class variable must have exactly 2 levels."
+msgstr "Sınıf değişkeni tam olarak 2 seviyeli olmalı."
+
+#: R/roc.b.R
+msgid "Selected event level is not valid."
+msgstr "Seçilmiş olan seviye geçerli değil."
+
+#: R/roc.b.R
+msgid ""
+"The class variable doesn't have exactly 2 levels in rows where '{col}' is "
+"not missing."
+msgstr ""
+"Sınıf değişkeni, '{col}' ifadesinin eksik olmadığı satırlarda tam olarak 2 "
+"seviyeye sahip değildir."
+
+#: R/roc.b.R
+msgid "ROC Curve"
+msgstr "ROC Eğrisi"
+
+#: R/roc.b.R
+msgid "1 - Specificity"
+msgstr "1 - Spesifisite"
+
+#: R/roc.b.R
+msgid "Positive if test %s cut-off (direction chosen to maximize AUC)."
+msgstr "Test %s eşik değer ise pozitif kabul edilir (yön, AUC değerini maksimize edecek şekilde seçilmiştir)."
+
+#: R/cutoff.b.R
+msgid "<h4>Procedure Notes</h4>"
+msgstr "<h4>Prosedür Notları</h4>"
+
+#: R/cutoff.b.R
+msgid ""
+"<p>Please begin by selecting your test/exposure variable and reference "
+"test/disease variable.</p>"
+msgstr ""
+"<p>Lütfen test/maruziyet değişkeninizi ve referans test/hastalık "
+"değişkeninizi seçerek başlayın</p>"
+
+#: R/cutoff.b.R
+msgid ""
+"<p>The test/exposure variable can be of any measurement type. The level "
+"selector and cutoff editor will be enabled or disabled automatically based "
+"on the variable type.</p>"
+msgstr ""
+"<p>Test/maruziyet değişkeni herhangi bir ölçüm tipinde olabilir. Seviye "
+"seçici ve kesme düzenleyici, değişken türüne göre otomatik olarak "
+"etkinleştirilecek veya devre dışı bırakılacaktır.</p>"
+
+#: R/cutoff.b.R
+msgid ""
+"<p>Ordinal variables with more than two levels will be treated as continuous,"
+" and require at least one cutoff value to be specified.</p>"
+msgstr ""
+"<p>İkiden fazla düzeyi olan sıralı değişkenler sürekli olarak ele alınacak "
+"ve en az bir kesme değerinin belirtilmesini gerektirecektir.</p>"
+
+#: R/cutoff.b.R
+msgid ""
+"<p>You may define multiple cutoff values for continuous or ordinal test "
+"variables.</p>"
+msgstr ""
+"<p>Sürekli veya sıralı test değişkenleri için birden fazla kesme değeri "
+"tanımlayabilirsiniz.</p>"
+
+#: R/cutoff.b.R
+msgid ""
+"<p>Ordinal variables with exactly two levels will be treated as dichotomous."
+"</p>"
+msgstr ""
+"<p>Tam olarak iki seviyeye sahip sıralı değişkenler ikili olarak ele "
+"alınacaktır.</p>"
+
+#: R/cutoff.b.R
+#: R/manual.b.R
+#: manual/results/contingency.columns.title
+msgid "Positive"
+msgstr "Pozitif"
+
+#: R/manual.b.R
+#: manual/results/contingency.columns.title
+msgid "Negative"
+msgstr "Negatif"
+
+#: R/cutoff.b.R
+#: manual/results/contingency.columns.title
+msgid "Reference Test / Disease"
+msgstr "Referans Test / Hastalık"
+
+#: R/cutoff.b.R
+#: R/manual.b.R
+msgid "New Test /<br>Exposure"
+msgstr "Yeni Test /<br>Maruziyet"
+
+#: R/manual.b.R
+msgid "Total"
+msgstr "Toplam"
+
+#: R/samplesize.b.R
+msgid "<h3>When to use?</h3>"
+msgstr "<h3>Ne zaman kullanılır?</h3>"
+
+#: R/samplesize.b.R
+msgid "<h3>Comments</h3>"
+msgstr "<h3>Yorumlar</h3>"
+
+#: R/samplesize.b.R
+msgid "<h2>Single Test Design, new diagnostic test</h2>"
+msgstr "<h2>Tek Test Tasarımı, yeni tanısal test</h2>"
+
+#: R/samplesize.b.R
+msgid ""
+"<p>This formula is used to estimate the sample size when the new diagnostic "
+"test is compared with the reference standard in a cohort where the true "
+"disease status and prevalence is known.</p>"
+msgstr ""
+"<p>Bu formül, gerçek hastalık durumu ve prevalansının bilindiği bir kohortta "
+"yeni tanı testi referans standart ile karşılaştırıldığında örneklem "
+"büyüklüğünü tahmin etmek için kullanılır.</p>"
+
+#: R/samplesize.b.R
+msgid ""
+"<p><strong>Sens or Spec</strong>: pre-determined value ascertained by "
+"previous published data or clinician experience/judgment</p><p><strong>"
+"Marginal error</strong>: maximum error of the estimate with a confidence "
+"level of 95%.</p><p><strong>Prevalence</strong>: disease prevalence in the "
+"study population.</p><p>Estimated sample sizes will be different for the "
+"same sensitivity and specificity if the disease prevalence is not 50%, or "
+"when the number subjects with and without the disease are not equal.</p>"
+msgstr ""
+"<p><strong>Sensitivite veya Spesifisite</strong>: Önceden "
+"yayımlanmış verilerden veya klinisyenin deneyimi/yargısından elde edilen "
+"belirlenmiş değer.</p> <p><strong>Marjinal hata</strong>: %95 güven "
+"düzeyinde tahminin maksimum hata payı.</p> <p><strong>Prevalans</strong>: "
+"Çalışma popülasyonundaki hastalık yaygınlığı (prevalansı).</p> <p>Hastalık "
+"prevalansı %50 değilse veya hasta olan ve olmayan bireylerin sayısı eşit "
+"değilse, aynı sensitivite ve spesifisite değerleri için tahmin edilen örneklem "
+"büyüklükleri farklı olacaktır.</p>"
+
+#: R/samplesize.b.R
+msgid ""
+"<h2>Single Test Design, comparing the accuracy of a single test to a null "
+"value</h2>"
+msgstr ""
+"<h2>Tek Test Tasarımı, tek bir testin doğruluğunun sıfır hipotezine karşı "
+"karşılaştırılması</h2>"
+
+#: R/samplesize.b.R
+msgid ""
+"<p>This formula is used to estimate the sample size when the diagnostic test "
+"is compared with the reference standard in a cohort where the true disease "
+"status and prevalence is <strong>unknown</strong>.</p><p>After the using the "
+"Equations, calculated values should be adjusted according to disease "
+"prevelance.</p>"
+msgstr ""
+"<p>Bu formül, gerçek hastalık durumu ve prevalansının <strong>"
+"bilinmediği</strong> bir kohortta tanı testi referans standart ile "
+"karşılaştırıldığında örneklem büyüklüğünü tahmin etmek için kullanılır.</p>"
+"<p>Denklemler kullanıldıktan sonra, hesaplanan değerler hastalık "
+"prevelansına göre ayarlanmalıdır.</p>"
+
+#: R/samplesize.b.R
+msgid "<h2>Studies comparing two diagnostic tests</h2>"
+msgstr "<h2>İki tanısal testi karşılaştıran çalışmalar</h2>"
+
+#: R/samplesize.b.R
+msgid ""
+"<h5>Unpaired (between-subjects) design</h5><p>Participants are randomly "
+"assigned to either the index or comparator test.</p><h5>Paired (within-"
+"subjects) design</h5><p>Two comparator tests are applied to all subjects "
+"along with the reference standard</p>"
+msgstr ""
+"<h5>Eşleştirilmemiş (bağımsız gruplar arası) tasarım</h5> <p>Katılımcılar "
+"rastgele olarak ya test grubuna ya da karşılaştırma grubuna atanır.</p> <h5>"
+"Eşleştirilmiş (birey içi) tasarım</h5> <p>Tüm bireylere iki karşılaştırmalı "
+"test ve referans standart birlikte uygulanır.</p>"
+
+#: R/samplesize.b.R
+msgid ""
+"<p>One-sided N is preferred since we want to test if one of the paths are "
+"different than the other</p><p><strong>Ψ (min)</strong> where the "
+"disagreement is minimum (P2-P1)</p><p><strong>Ψ (max)</strong> where the "
+"agreement is by chance, or disagreement is maximum</p><p>Cont.Correction are "
+"the values where the Yates' continuity correction was applied</p>"
+msgstr ""
+"<p>Tek taraflı N tercih edilir çünkü amaç yollar arasında bir fark olup "
+"olmadığını test etmektir.</p> <p><strong>Ψ (min)</strong>: En az uyuşmazlık "
+"durumu (P2 - P1)</p> <p><strong>Ψ (maks)</strong>: Uyuşmanın rastlantısal "
+"olduğu ya da uyuşmazlığın maksimum olduğu durum</p> <p><strong>Süreklilik "
+"Düzeltmesi</strong>: Yates'in süreklilik düzeltmesinin uygulandığı "
+"değerlerdir.</p>"
+
+#: R/samplesize.b.R
+msgid "N(sens)"
+msgstr "N(sens)"
+
+#: R/samplesize.b.R
+msgid "N(spec)"
+msgstr "N(spec)"
+
+#: R/samplesize.b.R
+msgid "N(sens, adjusted)"
+msgstr "N(sens, düzeltilmiş)"
+
+#: R/samplesize.b.R
+msgid "N(spec, adjusted)"
+msgstr "N(spec, düzeltilmiş)"
+
+#: R/samplesize.b.R
+msgid "N(max)"
+msgstr "N(maks)"
+
+#: R/samplesize.b.R
+msgid "Unpaired Design"
+msgstr "Eşleştirilmemiş Tasarım"
+
+#: R/samplesize.b.R
+msgid "Paired Design"
+msgstr "Eşleştirilmiş Tasarım"
+
+#: R/samplesize.b.R cutoff/results/summary.columns.title
+msgid "N"
+msgstr "N"
+
+#: R/samplesize.b.R
+msgid "N (Total)"
+msgstr "N (Toplam)"
+
+#: R/samplesize.b.R
+msgid "N (Ψ_min)"
+msgstr "N (Ψ_min)"
+
+#: R/samplesize.b.R
+msgid "N (Ψ_max)"
+msgstr "N (Ψ_max)"
+
+#: R/samplesize.b.R
+msgid "Mean"
+msgstr "Ortalama"
+
+#: R/samplesize.b.R
+msgid "diseased"
+msgstr "hasta"
+
+#: R/samplesize.b.R
+msgid "not-diseased"
+msgstr "hasta değil"
+
+#: R/samplesize.b.R
+msgid "total subjects"
+msgstr "toplam denek"
+
+#: R/samplesize.b.R
+msgid "for each group"
+msgstr "her grup için"
+
+#: R/samplesize.b.R
+msgid "for the study"
+msgstr "çalışma için"
+
+#: R/samplesize.b.R
+msgid "for each study"
+msgstr "her çalışma için"
+
+#: roc/results/combinedCurve.title
+msgid "Combined ROC Curves"
+msgstr "Birleştirilmiş ROC Eğrileri"
+
+#: roc/results/auc.title
+msgid "ROC Curve Summary"
+msgstr "ROC Eğrisi Özeti"
+
+#: cutoff/results/cutoffs.title
+msgid "Results"
+msgstr "Sonuçlar"
+
+#: roc/results/varStats.template.diagnostics.columns.title
+#: cutoff/results/cutoffs.template.diagnostics.columns.title
+#: manual/results/diagnostics.columns.title
+msgid "Result"
+msgstr "Sonuç"
+
+#: roc/results/auc.columns.title
+#: roc/results/delong.columns.title
+#: roc/results/varStats.template.diagnostics.columns.title
+#: cutoff/results/cutoffs.template.diagnostics.columns.title
+#: cutoff/results/cutoffs.template.relative.columns.title
+#: manual/results/diagnostics.columns.title
+msgid "95% CI"
+msgstr "%95 GA"
+
+#: roc/results/auc.columns.title
+#: roc/results/delong.columns.title
+#: roc/results/varStats.template.diagnostics.columns.title
+#: cutoff/results/cutoffs.template.diagnostics.columns.title
+#: manual/results/diagnostics.columns.title
+msgid "Lower"
+msgstr "Alt"
+
+#: roc/results/auc.columns.title roc/results/delong.columns.title
+#: roc/results/varStats.template.diagnostics.columns.title
+#: cutoff/results/cutoffs.template.diagnostics.columns.title
+msgid "Upper"
+msgstr "Üst"
+
+#: roc/results/delong.title
+msgid "Pairwise AUC Comparisons (DeLong's Test)"
+msgstr "İkili AUC Karşılaştırmaları (DeLong Testi)"
+
+#: roc/results/delong.columns.title
+msgid "AUC Difference"
+msgstr "AUC Farkı"
+
+#: roc/results/varStats.title
+msgid "Variables"
+msgstr "Değişkenler"
+
+#: roc/results/varStats.template.curve.title
+msgid "ROC Curve: $key"
+msgstr "ROC Eğrisi: $key"
+
+#: roc/results/varStats.template.coords.title
+msgid "Cut-off Coordinates: $key"
+msgstr "Eşik Değerler: $key"
+
+#: roc/results/varStats.template.coords.columns.title
+msgid "Cut-off"
+msgstr "Eşik Değer"
+
+#: roc/results/varStats.template.coords.columns.title
+msgid "TP"
+msgstr "GP"
+
+#: roc/results/varStats.template.coords.columns.title
+msgid "FP"
+msgstr "YP"
+
+#: roc/results/varStats.template.coords.columns.title
+msgid "TN"
+msgstr "GN"
+
+#: roc/results/varStats.template.coords.columns.title
+msgid "FN"
+msgstr "YN"
+
+#: roc/results/varStats.template.coords.columns.title
+msgid "PLR"
+msgstr "PLR"
+
+#: roc/results/varStats.template.coords.columns.title
+msgid "NLR"
+msgstr "NLR"
+
+#: roc/results/varStats.template.coords.columns.title roc.cF1.title
+msgid "F1 Score"
+msgstr "F1 Skoru"
+
+#: roc/results/varStats.template.coords.columns.title
+msgid "Youden's Index"
+msgstr "Youden İndeksi"
+
+#: roc/results/varStats.template.contingency.title
+msgid "Contingency Table: $key"
+msgstr "Çapraz Tablo: $key"
+
+#: roc/results/varStats.template.contingency.notes.m
+msgid "According to Youden's Index"
+msgstr "Youden İndeksine göre"
+
+#: roc/results/varStats.template.diagnostics.title
+msgid "Diagnostic Accuracy: $key"
+msgstr "Tanısal Doğruluk: $key"
+
+#: cutoff/results/summary.title
+msgid "Procedure Summary"
+msgstr "Prosedür Özeti"
+
+#: cutoff/results/summary.columns.title
+msgid "Variable"
+msgstr "Değişken"
+
+#: cutoff/results/summary.columns.title
+msgid "Type"
+msgstr "Tip"
+
+#: cutoff.b.R
+msgid "Factor"
+msgstr "Faktör"
+
+#: cutoff.b.R
+msgid "Numeric"
+msgstr "Sayısal"
+
+#: cutoff/results/summary.columns.title
+msgid "Missing"
+msgstr "Eksik Veri"
+
+#: cutoff/results/cutoffs.template.contingency.title
+#: manual/results/contingency.title
+msgid "Contingency Table"
+msgstr "Çapraz Tablo"
+
+#: cutoff.diagnostic.title 
+#: manual.diagnostic.title
+#: cutoff/results/cutoffs.template.diagnostics.title
+#: manual/results/diagnostics.title
+msgid "Diagnostic Accuracy"
+msgstr "Tanısal Doğruluk"
+
+#: cutoff.relative.title
+#: manual.relative.title
+#: cutoff/results/cutoffs.template.relative.title
+#: manual/results/relative.title
+msgid "Relative Risk and Odds Ratio"
+msgstr "Rölatif Risk ve Odds Oranı"
+
+#: cutoff.posttest.title
+#: manual.posttest.title
+#: cutoff/results/cutoffs.template.posttest.title
+#: manual/results/posttest.title
+msgid "Post-Test Probability"
+msgstr "Test Sonrası Olasılık"
+
+#: cutoff.pretest.title manual.pretest.title
+msgid "Pre-Test Probability"
+msgstr "Test Öncesi Olasılık"
+
+#: cutoff.fagan.title
+#: manual.fagan.title
+#: cutoff/results/cutoffs.template.fagan.title
+#: manual/results/fagan.title
+msgid "Fagan Nomogram"
+msgstr "Fagan Nomogramı"
+
+#: samplesize.results.title
+msgid "Sample Size Estimation For Diagnostic Accuracy Studies"
+msgstr "Tanısal Doğruluk Çalışmaları İçin Örneklem Büyüklüğü Hesaplama"
+
+#: samplesize/results/snewresult.title
+msgid "Single Test Design, new diagnostic test"
+msgstr "Tek Test Tasarımı, yeni tanısal testi"
+
+#: samplesize/results/snullresult.title
+msgid ""
+"Single Test Design, comparing the accuracy of a single test to a null value"
+msgstr ""
+"Tek Test Tasarımı, bir testin doğruluğunun sıfır hipotezine karşı karşılaştırılması"
+
+#: samplesize/results/compresult.title
+msgid "Studies comparing two diagnostic tests"
+msgstr "İki tanı testini karşılaştıran çalışmalar"
+
+#: samplesize/results/snullresult.columns.title
+#: samplesize/results/compresult.columns.title
+msgid "Continuity Correction"
+msgstr "Süreklilik Düzeltmesi"
+
+#: roc.title
+msgid "ROC Analysis"
+msgstr "ROC Analizi"
+
+#: roc.deps.title
+msgid "Dependent Variable(s)"
+msgstr "Bağımlı Değişken(ler)"
+
+#: roc.classVar.title
+msgid "Class Variable"
+msgstr "Sınıf Değişkeni"
+
+#: roc.eventLevel.title
+#: cutoff.event.title
+msgid "Event Level"
+msgstr "Pozitif Düzey"
+
+#: roc.compareRoc.title
+msgid "Compare ROC Curves (DeLong's Test)"
+msgstr "ROC Eğrilerini Karşılaştır (DeLong's Test)"
+
+#: roc.showDiagnostics.title
+msgid "Display Diagnostic Accuracy Metrics"
+msgstr "Tanısal Doğruluk Ölçütlerini Göster"
+
+#: roc.collapsebox[0].title
+msgid "Coordinates"
+msgstr "Koordinatlar"
+
+#: roc.collapsebox[1].title
+msgid "Plots"
+msgstr "Grafikler"
+
+#: roc.showCoords.title
+msgid "Display Coordinate Table"
+msgstr "Koordinat Tablosunu Göster"
+
+#: roc.showAllCoords.title
+msgid "Display All Coordinate Points"
+msgstr "Tüm Koordinat Noktalarını Göster"
+
+#: roc.displayCurves.title
+msgid "Display ROC Curves"
+msgstr "ROC Eğrilerini Görüntüle"
+
+#: roc.combineCurves.title
+msgid "Combine ROC Curves"
+msgstr "ROC Eğrilerini Birleştir"
+
+#: roc.cTP.title
+msgid "True Positive (TP)"
+msgstr "Gerçek Pozitif (GP)"
+
+#: roc.cFP.title
+msgid "False Positive (FP)"
+msgstr "Yanlış Pozitif (YP)"
+
+#: roc.cTN.title
+msgid "True Negative (TN)"
+msgstr "Gerçek Negatif (GN)"
+
+#: roc.cFN.title
+msgid "False Negative (FN)"
+msgstr "Yanlış Negatif (YN)"
+
+#: roc.cPoints.title
+msgid "Coordinate Points"
+msgstr "Koordinat Noktaları"
+
+#: roc.cABLine.title
+msgid "Reference Line"
+msgstr "Referans Çizgisi"
+
+#: roc.cGridLine.title
+msgid "Grid Lines"
+msgstr "Izgara Çizgileri"
+
+#: roc.pWidth.title
+msgid "Width"
+msgstr "Genişlik"
+
+#: roc.pHeight.title
+msgid "Height"
+msgstr "Yükseklik"
+
+#: cutoff.title
+msgid "Optimal Cut-off Selection"
+msgstr "Optimum Eşik Seçimi"
+
+#: cutoff.dep.title
+msgid "Test Variable"
+msgstr "Test Değişkeni"
+
+#: cutoff.testpos.title
+msgid "Positive Test Level"
+msgstr "Pozitif Test Seviyesi"
+
+#: cutoff.classVar.title
+msgid "Outcome Variable"
+msgstr "Sonuç Değişkeni"
+
+#: cutoff.cutoffs.title
+msgid "Cut-off Coordinates"
+msgstr "Eşik Değerler"
+
+#: cutoff.ui[0][0].label
+msgid "Test / Exposure Variable"
+msgstr "Test / Maruziyet Değişkeni"
+
+#: cutoff.ui[0][1][0].addButton
+msgid "Add cut-off"
+msgstr "Eşik değer ekle"
+
+#: cutoff.ui[0][2].label
+msgid "Reference / Disease Variable"
+msgstr "Referans / Hastalık Değişkeni"
+
+#: cutoff.ui[1].label
+msgid "Statistics"
+msgstr "İstatistikler"
+
+#: manual.title
+msgid "Manual Calculator"
+msgstr "Manuel Hesaplayıcı"
+
+#: samplesize.menutitle
+msgid "Sample Size Estimation"
+msgstr "Örneklem Büyüklüğü Hesaplama"
+
+#: samplesize.ui[0].options[0].label
+msgid "New diagnostic test"
+msgstr "Yeni tanısal test"
+
+#: samplesize.ui[0].options[1].label
+msgid "Compare to a null value"
+msgstr "Sıfır hipotezi ile karşılaştır"
+
+#: samplesize.ui[0].options[2].label
+msgid "Compare two tests"
+msgstr "İki testi karşılaştır"
+
+#: samplesize.ui.alpha_snew.title
+#: samplesize.ui.alpha_snull.title
+msgid "Type-1 Error"
+msgstr "Tip-1 Hata"
+
+#: samplesize.ui.ss_snew.title
+msgid "Sens or Spec"
+msgstr "Sensitivite veya Spesifisite"
+
+#: samplesize.ui.me_snew.title
+msgid "Marginal Error"
+msgstr "Marjinal Hata"
+
+#: samplesize.ui.power_snull.title
+msgid "Power"
+msgstr "Güç"
+
+#: samplesize.ui.sens1_snull.title
+msgid "Sensitivity (1)"
+msgstr "Sensitivite (1)"
+
+#: samplesize.ui.sens0_snull.title
+msgid "Sensitivity (0)"
+msgstr "Sensitivite (0)"
+
+#: samplesize.ui.spec1_snull.title
+msgid "Specificity (1)"
+msgstr "Spesifisite (1)"
+
+#: samplesize.ui.spec0_snull.title
+msgid "Specificity (0)"
+msgstr "Spesifisite (0)"
+
+#: samplesize.ui.prop1_comp.title
+msgid "Proportion 1"
+msgstr "Oran 1"
+
+#: samplesize.ui.prop2_comp.title
+msgid "Proportion 2"
+msgstr "Oran 2"
+
+#: samplesize.ui.dismin_comp.title
+msgid "Difference (Ψ_min)"
+msgstr "Fark (Ψ_min)"
+
+#: samplesize.ui.dismax_comp.title
+msgid "Ψ_max"
+msgstr "Ψ_max"
+
+#: roc.results.auc.columns.title
+msgid "Std. Error"
+msgstr "Std. Hata"
+
+#: roc.menu.subtitle
+msgid "Run ROC analysis and assess diagnostic accuracy metrics"
+msgstr "ROC analizi gerçekleştir ve tanısal doğruluk ölçütlerini değerlendir"
+
+#: cutoff.menu.subtitle
+msgid "Assess diagnostic accuracy metrics for selected cut-off points"
+msgstr "Seçilen eşik değerler için tanısal doğruluk ölçütlerini değerlendir"
+
+#: manual.menu.subtitle
+msgid "Assess diagnostic accuracy metrics based on the given contingency table"
+msgstr "Verilen çapraz tabloya göre tanısal doğruluk ölçütlerini değerlendir"
+
+#: roc.varStats.contingency.note
+msgid "Based on optimal cut-off (Youden’s Index)"
+msgstr "Optimum eşik değere göre (Youden indeksi)"

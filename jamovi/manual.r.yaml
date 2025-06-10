@@ -1,0 +1,120 @@
+---
+name:  manual
+title: Manual Calculator
+jrs:   '1.1'
+
+items:
+  - name: contingency
+    type: Table
+    rows: 3
+    title: "Contingency Table"
+    clearWith: 
+      - tp
+      - fp
+      - tn
+      - fn
+    columns:
+      - name: ptext
+        type: text
+        format: text
+        title: ''
+        combineBelow: true
+      - name: stext
+        type: text
+        title: ''
+      - name: refPos
+        type: number
+        title: Positive
+        superTitle: Reference Test / Disease
+      - name: refNeg
+        type: number
+        title: Negative
+        superTitle: Reference Test / Disease
+      - name: total
+        type: number
+        title: Total
+  - name: diagnostics
+    title: "Diagnostic Accuracy"
+    type: Table
+    clearWith: 
+      - tp
+      - fp
+      - tn
+      - fn
+    visible: (diagnostic)
+    rows: 8
+    columns: 
+      - name: text
+        type: text
+        title: ''
+      - name: result
+        type: text
+        title: Result
+      - name: ci.l
+        type: text
+        title: Lower
+        superTitle: "95% CI"
+      - name: ci.u
+        type: text
+        title: Upper
+        superTitle: "95% CI"
+  - name: relative
+    title: Relative Risk and Odds Ratio
+    type: Table
+    clearWith: 
+      - tp
+      - fp
+      - tn
+      - fn
+    visible: (relative)
+    rows: 5
+    columns: 
+      - name: text
+        type: text
+        title: ''
+      - name: result
+        type: text
+        title: Result
+      - name: ci
+        type: text
+        title: "95% CI"
+      - name: z
+        type: number
+        title: z
+      - name: p
+        type: number
+        title: p
+        format: zto,pvalue
+  - name: posttest
+    title: Post-Test Probability
+    type: Table
+    clearWith:
+      - tp
+      - tn
+      - fn
+      - tn
+      - pretest
+    visible: (posttest)
+    rows: 2
+    columns:
+      - name: text
+        title: ''
+        type: text
+      - name: result
+        title: Post-Test Probability
+        type: number
+        format: pc
+  - name: fagan
+    title: Fagan Nomogram
+    type: Image
+    clearWith: 
+      - tp
+      - tn
+      - fn
+      - tn
+      - pretest
+    width: 450
+    height: 500
+    visible: (posttest && fagan)
+    renderFun: .plot
+...

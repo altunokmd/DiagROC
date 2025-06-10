@@ -1,0 +1,139 @@
+---
+name:  cutoff
+title: Optimal Cut-off Selection
+jrs:   '1.1'
+
+items:
+  - name: procedure
+    type: Html
+  - name: summary
+    type: Table
+    title: "Procedure Summary"
+    rows: (dep)
+    visible: (dep)
+    clearWith: 
+      - dep
+    columns: 
+      - name: var
+        type: text
+        content: ($key)
+        title: Variable
+      - name: type
+        type: text
+        title: Type
+      - name: n
+        type: number
+        title: N
+      - name: miss
+        type: number
+        title: Missing
+  - name: cutoffs
+    type: Array
+    title: 'Results'
+    clearWith:
+      - dep
+    template:
+      type: Group
+      title: ''
+      items:
+      - name: contingency
+        type: Table
+        rows: 3
+        title: "Contingency Table"
+        clearWith: 
+          - dep
+          - cutoffs
+          - classVar
+          - event
+          - testpos
+        columns: []
+      - name: diagnostics
+        title: "Diagnostic Accuracy"
+        type: Table
+        clearWith: 
+          - dep
+          - cutoffs
+          - classVar
+          - event
+          - testpos
+        visible: (diagnostic)
+        rows: 8
+        columns: 
+          - name: text
+            type: text
+            title: ''
+          - name: result
+            type: text
+            title: Result
+          - name: ci.l
+            type: text
+            title: Lower
+            superTitle: "95% CI"
+          - name: ci.u
+            type: text
+            title: Upper
+            superTitle: "95% CI"
+      - name: relative
+        title: Relative Risk and Odds Ratio
+        type: Table
+        clearWith: 
+          - dep
+          - cutoffs
+          - classVar
+          - event
+          - testpos
+        visible: (relative)
+        rows: 5
+        columns: 
+          - name: text
+            type: text
+            title: ''
+          - name: result
+            type: text
+            title: Result
+          - name: ci
+            type: text
+            title: "95% CI"
+          - name: z
+            type: number
+            title: z
+          - name: p
+            type: number
+            title: p
+            format: zto,pvalue
+      - name: posttest
+        title: Post-Test Probability
+        type: Table
+        clearWith:
+          - dep
+          - cutoffs
+          - classVar
+          - event
+          - testpos
+          - pretest
+        visible: (posttest)
+        rows: 2
+        columns:
+          - name: text
+            title: ''
+            type: text
+          - name: result
+            title: Post-Test Probability
+            type: number
+            format: pc
+      - name: fagan
+        title: Fagan Nomogram
+        type: Image
+        clearWith: 
+          - dep
+          - cutoffs
+          - classVar
+          - event
+          - testpos
+          - pretest
+        width: 450
+        height: 500
+        visible: (posttest && fagan)
+        renderFun: .plot
+
+...

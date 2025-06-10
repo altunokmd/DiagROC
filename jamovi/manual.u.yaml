@@ -1,0 +1,125 @@
+title: Manual Calculator
+name: manual
+jus: '3.0'
+stage: 0
+compilerMode: tame
+children:
+  - type: LayoutBox
+    margin: large
+    children:
+      - type: LayoutBox
+        margin: normal
+        stretchFactor: 2
+        cell:
+          row: 0
+          column: 2
+        children:
+          - type: Label
+            label: Reference Test / Disease
+      - type: LayoutBox
+        margin: normal
+        cell:
+          row: 1
+          column: 2
+        children:
+          - type: Label
+            label: Positive
+      - type: LayoutBox
+        margin: normal
+        cell:
+          row: 1
+          column: 3
+        children:
+          - type: Label
+            label: Negative
+      - type: LayoutBox
+        margin: normal
+        verticalAlignment: top
+        cell:
+          row: 2
+          column: 0
+        children:
+          - type: Label
+            label: New Test /<br>Exposure
+      - type: LayoutBox
+        margin: normal
+        verticalAlignment: top
+        cell:
+          row: 2
+          column: 1
+        children:
+          - type: Label
+            label: Positive
+      - type: LayoutBox
+        margin: normal
+        verticalAlignment: top
+        cell:
+          row: 3
+          column: 1
+        children:
+          - type: Label
+            label: Negative
+      - type: LayoutBox
+        margin: normal
+        verticalAlignment: top
+        cell:
+          row: 2
+          column: 2
+        children:
+          - type: TextBox
+            name: tp
+            format: number
+            width: large
+      - type: LayoutBox
+        margin: normal
+        verticalAlignment: top
+        cell:
+          row: 2
+          column: 3
+        children:
+          - type: TextBox
+            name: fp
+            format: number
+            width: large
+      - type: LayoutBox
+        margin: normal
+        verticalAlignment: top
+        cell:
+          row: 3
+          column: 2
+        children:
+          - type: TextBox
+            name: fn
+            format: number
+            width: large
+      - type: LayoutBox
+        margin: normal
+        verticalAlignment: top
+        cell:
+          row: 3
+          column: 3
+        children:
+          - type: TextBox
+            name: tn
+            format: number
+            width: large
+  - type: LayoutBox
+    margin: large
+    children:
+      - type: CheckBox
+        name: diagnostic
+      - type: CheckBox
+        name: relative
+  - type: LayoutBox
+    margin: large
+    children:
+      - type: CheckBox
+        name: posttest
+      - type: TextBox
+        name: pretest
+        format: number
+        enable: (posttest)
+        suffix: '%'
+      - type: CheckBox
+        name: fagan
+        enable: (posttest)

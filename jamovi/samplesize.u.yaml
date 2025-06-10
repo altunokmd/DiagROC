@@ -1,0 +1,92 @@
+title: Sample Size Estimation
+name: samplesize
+jus: '3.0'
+stage: 0
+compilerMode: tame
+children:
+  - type: ModeSelector
+    name: mode
+    stretchFactor: 1
+    children:
+      - type: Content
+        name: singlenew
+        children:
+          - type: LayoutBox
+            margin: large
+            children:
+              - type: LayoutBox
+                margin: large
+                children:
+                  - type: ComboBox
+                    name: alpha_snew
+                  - type: TextBox
+                    name: ss_snew
+                    format: number
+                    suffix: "%"
+                  - type: TextBox
+                    name: prev_snew
+                    format: number
+                    suffix: "%"
+                  - type: TextBox
+                    name: me_snew
+                    format: number
+                    suffix: "%"
+      - type: Content
+        name: singlenull
+        children:
+          - type: LayoutBox
+            margin: large
+            children:
+              - type: ComboBox
+                name: power_snull
+              - type: ComboBox
+                name: alpha_snull
+              - type: TextBox
+                name: sens1_snull
+                format: number
+                suffix: "%"
+              - type: TextBox
+                name: sens0_snull
+                format: number
+                suffix: "%"
+              - type: TextBox
+                name: spec1_snull
+                format: number
+                suffix: "%"
+              - type: TextBox
+                name: spec0_snull
+                format: number
+                suffix: "%"
+              - type: TextBox
+                name: prev_snull
+                format: number
+                suffix: "%"
+      - type: Content
+        name: comparetwo
+        children: 
+          - type: LayoutBox
+            margin: large
+            children:
+              - type: ComboBox
+                name: power_comp
+              - type: ComboBox
+                name: alpha_comp
+              - type: TextBox
+                name: prop1_comp
+                format: number
+                suffix: "%"
+              - type: TextBox
+                name: prop2_comp
+                format: number
+                suffix: "%"
+          - type: LayoutBox
+            margin: large
+            children:
+              - type: TextBox
+                name: dismin_comp
+                format: number
+                suffix: "%"
+              - type: TextBox
+                name: dismax_comp
+                format: number
+                suffix: "%"

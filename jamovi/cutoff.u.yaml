@@ -1,0 +1,92 @@
+title: Optimal Cut-off Selection
+name: cutoff
+jus: '3.0'
+stage: 0
+compilerMode: tame
+children:
+  - type: VariableSupplier
+    persistentItems: false
+    stretchFactor: 1
+    children:
+      - type: TargetLayoutBox
+        label: Test / Exposure Variable
+        children:
+          - type: VariablesListBox
+            name: dep
+            isTarget: true
+            maxItemCount: 1
+          - type: LevelSelector
+            name: testpos
+            defaultLevelIndex: 1
+      - type: LayoutBox
+        margin: normal
+        stretchFactor: 1
+        children:
+          - type: ListBox
+            name: cutoffs
+            stretchFactor: 1
+            addButton: Add cut-off
+            template:
+              type: LayoutBox
+              margin: normal
+              children: 
+                - type: ComboBox
+                  default: '>='
+                  cell:
+                    row: 0
+                    column: 0
+                  valueKey: 
+                    - direction
+                - type: TextBox
+                  format: number
+                  width: large
+                  default: null
+                  cell:
+                    row: 0
+                    column: 1
+                  valueKey:
+                    - cutoff
+      - type: TargetLayoutBox
+        label: Reference / Disease Variable
+        children:
+          - type: VariablesListBox
+            name: classVar
+            maxItemCount: 1
+            isTarget: true
+          - type: LevelSelector
+            name: event
+            defaultLevelIndex: 1
+
+  - type: CollapseBox
+    label: Statistics
+    collapsed: false
+    children: 
+      - type: LayoutBox
+        stretchFactor: 1
+        children: 
+          - type: LayoutBox
+            margin: large
+            cell: 
+              row: 0
+              column: 0
+            children:
+              - type: CheckBox
+                name: diagnostic
+              - type: CheckBox
+                name: relative
+          - type: LayoutBox
+            margin: large
+            cell: 
+              row: 0
+              column: 1
+            children:
+              - type: CheckBox
+                name: posttest
+              - type: TextBox
+                name: pretest
+                format: number
+                enable: (posttest)
+                suffix: '%'
+              - type: CheckBox
+                name: fagan
+                enable: (posttest)

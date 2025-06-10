@@ -1,0 +1,80 @@
+---
+name:  cutoff
+title: Optimal Cut-off Selection
+menuGroup: DiagROC
+version: '1.0.0'
+jas: '1.2'
+
+options:
+  - name: data
+    type: Data
+
+  - name: dep
+    title: Test Variable
+    type: Variable
+    suggested:
+      - continuous
+      - ordinal
+      - nominal
+  - name: testpos
+    title: Positive Test Level
+    type: Level
+    variable: (dep)
+  - name: classVar
+    title: Outcome Variable
+    type: Variable
+    suggested:
+      - nominal
+    permitted:
+      - factor
+  - name: event
+    title: Event Level
+    type: Level
+    variable: (classVar)
+  - name: cutoffs
+    title: Cut-offs
+    type: Array
+    default: 
+      - cutoff: null
+        direction: '>='
+    template:
+      type: Group
+      elements:
+        - name: cutoff
+          type: Number
+        - name: direction
+          type: List
+          options:
+            - name: '>='
+              title: '≥'
+            - name: '>'
+              title: '>'
+            - name: '<='
+              title: '≤'
+            - name: '<'
+              title: '<'
+          default: ">="
+  - type: Bool
+    name: diagnostic
+    title: Diagnostic Accuracy
+    default: true
+  - type: Bool
+    name: relative
+    title: Relative Risk and Odds Ratio
+    default: false
+  - type: Bool
+    name: posttest
+    title: Post-Test Probability
+    default: false
+  - type: Number
+    name: pretest
+    title: Pre-Test Probability
+    min: 0
+    max: 100
+    default: 10
+  - type: Bool
+    name: fagan
+    title: Fagan Nomogram
+    default: false
+
+...

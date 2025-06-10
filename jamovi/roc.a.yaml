@@ -1,0 +1,145 @@
+---
+name: roc
+title: ROC Analysis
+menuGroup: DiagROC
+version: '1.0.0'
+jas: '1.2'
+
+options:
+  - name: data
+    type: Data
+
+  - name: deps
+    title: Dependent Variable(s)
+    type: Variables
+    suggested:
+      - continuous
+    permitted:
+      - numeric
+
+  - name: classVar
+    title: Class Variable
+    type: Variable
+    suggested:
+      - nominal
+    permitted:
+      - factor
+
+  - name: eventLevel
+    title: Event Level
+    type: Level
+    variable: (classVar)
+
+  - name: compareRoc
+    title: Compare ROC Curves (DeLong's Test)
+    type: Bool
+    default: false
+
+  - name: showDiagnostics
+    title: Display Diagnostic Accuracy Metrics
+    type: Bool
+    default: true
+
+  - name: showCoords
+    title: Display Coordinate Table
+    type: Bool
+    default: false
+
+  - name: showAllCoords
+    title: Display All Coordinate Points
+    type: Bool
+    default: false
+
+  - name: displayCurves
+    title: Display ROC Curves
+    type: Bool
+    default: true
+
+  - name: combineCurves
+    title: Combine ROC Curves
+    type: Bool
+    default: true
+
+  - name: cTP
+    title: True Positive (TP)
+    type: Bool
+    default: false
+
+  - name: cFP
+    title: False Positive (FP)
+    type: Bool
+    default: false
+
+  - name: cFN
+    title: False Negative (FN)
+    type: Bool
+    default: false
+
+  - name: cTN
+    title: True Negative (TN)
+    type: Bool
+    default: false
+
+  - name: cPPV
+    title: Positive Predictive Value
+    type: Bool
+    default: false
+
+  - name: cNPV
+    title: Negative Predictive Value
+    type: Bool
+    default: false
+
+  - name: cPLR
+    title: Positive Likelihood Ratio
+    type: Bool
+    default: false
+
+  - name: cNLR
+    title: Negative Likelihood Ratio
+    type: Bool
+    default: false
+
+  - name: cAcc
+    title: Accuracy
+    type: Bool
+    default: false
+
+  - name: cPrev
+    title: Prevalence
+    type: Bool
+    default: false
+
+  - name: cF1
+    title: F1 Score
+    type: Bool
+    default: false
+
+  - name: cPoints
+    type: Bool
+    title: Coordinate Points
+    default: false
+
+  - name: cABLine
+    type: Bool
+    title: Reference Line
+    default: true
+
+  - name: cGridLine
+    type: Bool
+    title: Grid Lines
+    default: true
+
+  - name: pWidth
+    type: Number
+    title: Width
+    default: 450
+    min: 300
+    max: 700
+
+  - name: pHeight
+    type: Number
+    title: Height
+    default: 350
+    min: 300
+    max: 700
