@@ -4,9 +4,14 @@ Title: ROC Analysis with Diagnostic Accuracy Tools
 Version: 0.9.3
 Author: İbrahim Altunok
 Maintainer: İbrahim Altunok <ibrahim@altunok.md>
-Description: A module for ROC analysis extended with diagnostic accuracy metrics.
-    This module allows users to perform one or more ROC analyses along with diagnostic accuracy assessments using the optimal threshold based on Youden's Index.
-    It also enables the selection of one or more custom coordinate points for a variable, and includes a comprehensive manual calculator. 
+Description: A module for ROC analysis extended with diagnostic accuracy metrics. 
+  This module allows users to perform one or more ROC analyses along with diagnostic
+  accuracy assessments using the optimal threshold based on Youden's Index. It
+  also enables the selection of one or more custom coordinate points for a
+  variable, and includes a comprehensive manual calculator. For detailed information, 
+  feature requests or reporting bugs, please visit the project's <a
+  href="https://github.com/altunokmd/DiagROC" target="_blank">GitHub
+  Repository</a>
 License: GPL (>=2)
 Encoding: UTF-8
 LazyData: true
