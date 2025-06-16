@@ -1,7 +1,7 @@
 Package: DiagROC
 Type: Package
 Title: ROC Analysis with Diagnostic Accuracy Tools
-Version: 0.9.3
+Version: 0.9.4
 Author: İbrahim Altunok
 Maintainer: İbrahim Altunok <ibrahim@altunok.md>
 Description: A module for ROC analysis extended with diagnostic accuracy metrics. 

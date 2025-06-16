@@ -1,7 +1,7 @@
 ---
 title: ROC Analysis with Diagnostic Accuracy Tools
 name: DiagROC
-version: 0.9.3
+version: 0.9.4
 jms: '1.0'
 authors:
   - İbrahim Altunok
@@ -23,28 +23,28 @@ analyses:
     ns: DiagROC
     menuGroup: DiagROC
     menuTitle: ROC Analysis
-    menuSubtitle: Run ROC analysis and assess diagnostic accuracy metrics
+    menuSubtitle: Run ROC analysis with diagnostic accuracy
     category: analyses
   - title: Optimal Cut-off Selection
     name: cutoff
     ns: DiagROC
     menuGroup: DiagROC
     menuTitle: Optimal Cut-off Selection
-    menuSubtitle: Assess diagnostic accuracy metrics for selected cut-off points
+    menuSubtitle: Diagnostic accuracy for selected cut-offs
     category: analyses
   - title: Manual Calculator
     name: manual
     ns: DiagROC
     menuGroup: DiagROC
     menuTitle: Manual Calculator
-    menuSubtitle: Assess diagnostic accuracy metrics based on the given contingency table
+    menuSubtitle: Diagnostic accuracy for given contingency table
     category: analyses
   - title: Sample Size Estimation
     name: samplesize
     ns: DiagROC
     menuGroup: DiagROC
     menuTitle: Sample Size Estimation
-    menuSubtitle: Sample Size Estimation For Diagnostic Accuracy Studies
+    menuSubtitle: For diagnostic accuracy studies
     category: analyses
 usesNative: true
 minApp: 1.0.8

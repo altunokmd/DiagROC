@@ -288,12 +288,12 @@ rocResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                         `name`="lowerCi", 
                         `title`="Lower", 
                         `type`="number", 
-                        `superTitle`="95% CI"),
+                        `superTitle`="95% Confidence Interval"),
                     list(
                         `name`="upperCi", 
                         `title`="Upper", 
                         `type`="number", 
-                        `superTitle`="95% CI"),
+                        `superTitle`="95% Confidence Interval"),
                     list(
                         `name`="p", 
                         `title`="p", 
@@ -321,12 +321,12 @@ rocResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                     list(
                         `name`="ci.l", 
                         `title`="Lower", 
-                        `superTitle`="95% CI", 
+                        `superTitle`="95% Confidence Interval", 
                         `type`="number"),
                     list(
                         `name`="ci.u", 
                         `title`="Upper", 
-                        `superTitle`="95% CI", 
+                        `superTitle`="95% Confidence Interval", 
                         `type`="number"),
                     list(
                         `name`="stat", 
@@ -362,7 +362,7 @@ rocResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                                 options=options,
                                 name="curve",
                                 visible="(displayCurves && !combineCurves)",
-                                title="ROC Curve: $key",
+                                title="ROC Curve - $key",
                                 width=450,
                                 height=350,
                                 renderFun=".plot",
@@ -375,7 +375,7 @@ rocResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                             self$add(jmvcore::Table$new(
                                 options=options,
                                 name="coords",
-                                title="Cut-off Coordinates: $key",
+                                title="Cut-off Coordinates - $key",
                                 rows=0,
                                 visible="(showCoords)",
                                 clearWith=list(
@@ -463,7 +463,7 @@ rocResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                                 options=options,
                                 name="contingency",
                                 rows=3,
-                                title="Contingency Table: $key",
+                                title="Contingency Table - $key",
                                 visible="(showDiagnostics && !is.null(classVar))",
                                 columns=list(),
                                 clearWith=list(
@@ -474,7 +474,7 @@ rocResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                             self$add(jmvcore::Table$new(
                                 options=options,
                                 name="diagnostics",
-                                title="Diagnostic Accuracy: $key",
+                                title="Diagnostic Accuracy - $key",
                                 visible="(showDiagnostics && !is.null(classVar))",
                                 rows=8,
                                 clearWith=list(
@@ -493,12 +493,12 @@ rocResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                                         `name`="ci.l", 
                                         `type`="text", 
                                         `title`="Lower", 
-                                        `superTitle`="95% CI"),
+                                        `superTitle`="95% Confidence Interval"),
                                     list(
                                         `name`="ci.u", 
                                         `type`="text", 
                                         `title`="Upper", 
-                                        `superTitle`="95% CI"))))}))$new(options=options)))}))
+                                        `superTitle`="95% Confidence Interval"))))}))$new(options=options)))}))
 
 rocBase <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
     "rocBase",

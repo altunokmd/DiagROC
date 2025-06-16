@@ -168,12 +168,12 @@ manualResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                         `name`="ci.l", 
                         `type`="text", 
                         `title`="Lower", 
-                        `superTitle`="95% CI"),
+                        `superTitle`="95% Confidence Interval"),
                     list(
                         `name`="ci.u", 
                         `type`="text", 
                         `title`="Upper", 
-                        `superTitle`="95% CI"))))
+                        `superTitle`="95% Confidence Interval"))))
             self$add(jmvcore::Table$new(
                 options=options,
                 name="relative",
@@ -197,7 +197,7 @@ manualResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                     list(
                         `name`="ci", 
                         `type`="text", 
-                        `title`="95% CI"),
+                        `title`="95% Confidence Interval"),
                     list(
                         `name`="z", 
                         `type`="number", 

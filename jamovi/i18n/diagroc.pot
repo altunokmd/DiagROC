@@ -332,7 +332,7 @@ msgstr ""
 #: cutoff/results/cutoffs.template.diagnostics.columns.title
 #: cutoff/results/cutoffs.template.relative.columns.title
 #: manual/results/diagnostics.columns.title
-msgid "95% CI"
+msgid "95% Confidence Interval"
 msgstr ""
 
 #: roc/results/auc.columns.title

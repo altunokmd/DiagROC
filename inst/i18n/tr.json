@@ -223,8 +223,8 @@
             "Result": [
                 "Sonuç"
             ],
-            "95% CI": [
-                "%95 GA"
+            "95% Confidence Interval": [
+                "%95 Güven Aralığı"
             ],
             "Lower": [
                 "Alt"

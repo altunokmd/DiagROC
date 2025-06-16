@@ -82,11 +82,12 @@ children:
             children:
               - type: CheckBox
                 name: posttest
-              - type: TextBox
-                name: pretest
-                format: number
-                enable: (posttest)
-                suffix: '%'
-              - type: CheckBox
-                name: fagan
-                enable: (posttest)
+                children: 
+                  - type: TextBox
+                    name: pretest
+                    format: number
+                    enable: (posttest)
+                    suffix: '%'
+                  - type: CheckBox
+                    name: fagan
+                    enable: (posttest)

@@ -401,8 +401,8 @@ msgstr "Result"
 #: cutoff/results/cutoffs.template.diagnostics.columns.title
 #: cutoff/results/cutoffs.template.relative.columns.title
 #: manual/results/diagnostics.columns.title
-msgid "95% CI"
-msgstr "95% CI"
+msgid "95% Confidence Interval"
+msgstr "95% Confidence Interval"
 
 #: roc/results/auc.columns.title
 #: roc/results/delong.columns.title

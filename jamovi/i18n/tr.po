@@ -402,8 +402,8 @@ msgstr "Sonuç"
 #: cutoff/results/cutoffs.template.diagnostics.columns.title
 #: cutoff/results/cutoffs.template.relative.columns.title
 #: manual/results/diagnostics.columns.title
-msgid "95% CI"
-msgstr "%95 GA"
+msgid "95% Confidence Interval"
+msgstr "%95 Güven Aralığı"
 
 #: roc/results/auc.columns.title
 #: roc/results/delong.columns.title

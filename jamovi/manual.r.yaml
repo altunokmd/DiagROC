@@ -53,11 +53,11 @@ items:
       - name: ci.l
         type: text
         title: Lower
-        superTitle: "95% CI"
+        superTitle: "95% Confidence Interval"
       - name: ci.u
         type: text
         title: Upper
-        superTitle: "95% CI"
+        superTitle: "95% Confidence Interval"
   - name: relative
     title: Relative Risk and Odds Ratio
     type: Table
@@ -77,7 +77,7 @@ items:
         title: Result
       - name: ci
         type: text
-        title: "95% CI"
+        title: "95% Confidence Interval"
       - name: z
         type: number
         title: z

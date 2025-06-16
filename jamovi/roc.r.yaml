@@ -43,11 +43,11 @@ items:
       - name: lowerCi
         title: Lower
         type: number
-        superTitle: 95% CI
+        superTitle: 95% Confidence Interval
       - name: upperCi
         title: Upper
         type: number
-        superTitle: 95% CI
+        superTitle: 95% Confidence Interval
       - name: p
         title: p
         type: number
@@ -71,11 +71,11 @@ items:
         type: number
       - name: ci.l
         title: Lower
-        superTitle: 95% CI
+        superTitle: 95% Confidence Interval
         type: number
       - name: ci.u
         title: Upper
-        superTitle: 95% CI
+        superTitle: 95% Confidence Interval
         type: number
       - name: stat
         title: z
@@ -99,7 +99,7 @@ items:
         - name: curve
           visible: (displayCurves && !combineCurves)
           type: Image
-          title: "ROC Curve: $key"
+          title: "ROC Curve - $key"
           width: 450
           height: 350
           renderFun: .plot
@@ -111,7 +111,7 @@ items:
             - pHeight
 
         - name: coords
-          title: "Cut-off Coordinates: $key"
+          title: "Cut-off Coordinates - $key"
           type: Table
           rows: 0
           visible: (showCoords)
@@ -185,7 +185,7 @@ items:
         - name: contingency
           type: Table
           rows: 3
-          title: "Contingency Table: $key"
+          title: "Contingency Table - $key"
           visible: (showDiagnostics && !is.null(classVar))
           columns: []
           clearWith: 
@@ -195,7 +195,7 @@ items:
             m: Based on optimal cut-off (Youden’s Index)
 
         - name: diagnostics
-          title: "Diagnostic Accuracy: $key"
+          title: "Diagnostic Accuracy - $key"
           type: Table
           visible: (showDiagnostics && !is.null(classVar))
           rows: 8
@@ -212,9 +212,9 @@ items:
             - name: ci.l
               type: text
               title: Lower
-              superTitle: 95% CI
+              superTitle: 95% Confidence Interval
             - name: ci.u
               type: text
               title: Upper
-              superTitle: 95% CI
+              superTitle: 95% Confidence Interval
 ...
