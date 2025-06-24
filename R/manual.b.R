@@ -22,7 +22,6 @@ manualClass <- if (requireNamespace('jmvcore', quietly=TRUE)) R6::R6Class(
             cont$setRow(rowNo = 3, list(ptext = .("New Test /<br>Exposure"), stext = .("Total")))
             cont$addFormat(rowNo = 3, 1, jmvcore::Cell.BEGIN_END_GROUP)
 
-            init_diagnostic_table(self, self$results$diagnostics)
             init_relative_table(self, self$results$relative)
             init_posttest_table(self, self$results$posttest)
         },
@@ -40,6 +39,7 @@ manualClass <- if (requireNamespace('jmvcore', quietly=TRUE)) R6::R6Class(
 
             if (self$options$diagnostic)
                 populate_diagnostic_table(
+                    self,
                     table = self$results$diagnostics,
                     tp = tp, fp = fp, tn = tn, fn = fn
                 )

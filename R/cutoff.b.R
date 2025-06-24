@@ -88,7 +88,6 @@ cutoffClass <- if (requireNamespace('jmvcore', quietly=TRUE)) R6::R6Class(
                     testpos = crow$testpos,
                     testneg = crow$testneg
                 )
-                init_diagnostic_table(self, group$diagnostics)
                 init_relative_table(self, group$relative)
                 init_posttest_table(self, group$posttest)
             }
@@ -134,6 +133,7 @@ cutoffClass <- if (requireNamespace('jmvcore', quietly=TRUE)) R6::R6Class(
                 cont$setRow(rowNo = 3, list(refpos = tp + fn, refneg = fp + tn, total = tp + fp + fn + tn))
                 if (self$options$diagnostic)
                     populate_diagnostic_table(
+                        self,
                         table = group$diagnostics,
                         tp = tp, fp = fp, tn = tn, fn = fn
                     )

@@ -1,17 +1,15 @@
 source("R/utils.R")
-init_diagnostic_table <- function(self, table) {
+
+populate_diagnostic_table <- function(self, table, ...) {
+    ret <- c("sens", "spec", "plr", "nlr", "prev", "ppv", "npv", "acc")
     dNames <- c(
         .("Sensitivity"), .("Specificity"), .("Positive Likelihood Ratio"), .("Negative Likelihood Ratio"),
         .("Prevalence"), .("Positive Predictive Value"), .("Negative Predictive Value"), .("Accuracy")
     )
-    for (n in seq_along(dNames)) table$setRow(rowNo = n, list(text = dNames[n]))
-}
-
-populate_diagnostic_table <- function(table, ...) {
-    ret <- c("sens", "spec", "plr", "nlr", "prev", "ppv", "npv", "acc")
     values <- roc_diagnostic(ret = ret, ...)
     for (n in seq_along(ret)) {
         table$setRow(rowNo = n, list(
+            text = dNames[n],
             result = values[[ret[n]]]["estimate"],
             ci.l = values[[ret[n]]]["lower"],
             ci.u = values[[ret[n]]]["upper"]

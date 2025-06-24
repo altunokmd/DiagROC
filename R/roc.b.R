@@ -51,7 +51,6 @@ rocClass <- if (requireNamespace("jmvcore", quietly = TRUE)) {
                     c <- var$contingency
                     t <- var$coords
                     init_contingency_table(self, c, ptitle = col, superTitle = classVar, refpos = positiveClass, refneg = negativeClass)
-                    init_diagnostic_table(self, var$diagnostics)
                     var$curve$setSize(self$options$pWidth, self$options$pHeight)
                 }
 
@@ -116,7 +115,7 @@ rocClass <- if (requireNamespace("jmvcore", quietly = TRUE)) {
                             c$setRow(rowNo = i, as.list(r$cont[i, ]))
                         }
 
-                        populate_diagnostic_table(table = vars$diagnostics, tp = r$best$tp, fp = r$best$fp, tn = r$best$tn, fn = r$best$fn)
+                        populate_diagnostic_table(self, table = vars$diagnostics, tp = r$best$tp, fp = r$best$fp, tn = r$best$tn, fn = r$best$fn)
                     }
                 }
             },
