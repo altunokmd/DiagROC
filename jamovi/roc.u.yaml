@@ -100,6 +100,9 @@ children:
                   - type: CheckBox
                     name: cF1
                     enable: (showCoords)
+                  - type: CheckBox
+                    name: cTL
+                    enable: (showCoords)
   - type: CollapseBox
     label: Plots
     collapsed: true

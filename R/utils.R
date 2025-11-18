@@ -259,6 +259,9 @@ compute_single_roc <- function(self, data, classVar, predictor, levels, options)
     if (options$cF1) {
       coords$f1 <- (2 * coords$sensitivity * n1) / (n1 + coords$sensitivity * n1 + (1 - coords$specificity) * n0)
     }
+    if (options$cTL) {
+      coords$tl <- sqrt((1 - coords$sensitivity)^2 + (1 - coords$specificity)^2)
+    }
 
     ret$coords <- coords[order(coords$threshold), ]
   }

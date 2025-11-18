@@ -115,6 +115,11 @@ options:
     type: Bool
     default: false
 
+  - name: cTL
+    title: Distance to Top Left
+    type: Bool
+    default: false
+
   - name: cPoints
     type: Bool
     title: Coordinate Points

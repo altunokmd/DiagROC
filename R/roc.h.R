@@ -26,6 +26,7 @@ rocOptions <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
             cAcc = FALSE,
             cPrev = FALSE,
             cF1 = FALSE,
+            cTL = FALSE,
             cPoints = FALSE,
             cABLine = TRUE,
             cGridLine = TRUE,
@@ -124,6 +125,10 @@ rocOptions <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                 "cF1",
                 cF1,
                 default=FALSE)
+            private$..cTL <- jmvcore::OptionBool$new(
+                "cTL",
+                cTL,
+                default=FALSE)
             private$..cPoints <- jmvcore::OptionBool$new(
                 "cPoints",
                 cPoints,
@@ -169,6 +174,7 @@ rocOptions <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
             self$.addOption(private$..cAcc)
             self$.addOption(private$..cPrev)
             self$.addOption(private$..cF1)
+            self$.addOption(private$..cTL)
             self$.addOption(private$..cPoints)
             self$.addOption(private$..cABLine)
             self$.addOption(private$..cGridLine)
@@ -196,6 +202,7 @@ rocOptions <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
         cAcc = function() private$..cAcc$value,
         cPrev = function() private$..cPrev$value,
         cF1 = function() private$..cF1$value,
+        cTL = function() private$..cTL$value,
         cPoints = function() private$..cPoints$value,
         cABLine = function() private$..cABLine$value,
         cGridLine = function() private$..cGridLine$value,
@@ -222,6 +229,7 @@ rocOptions <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
         ..cAcc = NA,
         ..cPrev = NA,
         ..cF1 = NA,
+        ..cTL = NA,
         ..cPoints = NA,
         ..cABLine = NA,
         ..cGridLine = NA,
@@ -456,6 +464,11 @@ rocResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                                         `type`="number", 
                                         `visible`="(cF1)"),
                                     list(
+                                        `name`="tl", 
+                                        `title`="Distance to Top Left", 
+                                        `type`="number", 
+                                        `visible`="(cTL)"),
+                                    list(
                                         `name`="youden", 
                                         `title`="Youden's Index", 
                                         `type`="number"))))
@@ -545,6 +558,7 @@ rocBase <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
 #' @param cAcc .
 #' @param cPrev .
 #' @param cF1 .
+#' @param cTL .
 #' @param cPoints .
 #' @param cABLine .
 #' @param cGridLine .
@@ -587,6 +601,7 @@ roc <- function(
     cAcc = FALSE,
     cPrev = FALSE,
     cF1 = FALSE,
+    cTL = FALSE,
     cPoints = FALSE,
     cABLine = TRUE,
     cGridLine = TRUE,
@@ -627,6 +642,7 @@ roc <- function(
         cAcc = cAcc,
         cPrev = cPrev,
         cF1 = cF1,
+        cTL = cTL,
         cPoints = cPoints,
         cABLine = cABLine,
         cGridLine = cGridLine,

@@ -178,6 +178,10 @@ items:
               title: F1 Score
               type: number
               visible: (cF1)
+            - name: tl
+              title: Distance to Top Left
+              type: number
+              visible: (cTL)
             - name: youden
               title: Youden's Index
               type: number

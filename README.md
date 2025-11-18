@@ -62,3 +62,15 @@ For methodological background, see [Akoğlu (2022)](https://turkjemergmed.com/ab
 
 [^pROC-manual]: Robin X, et al. pROC: Display and Analyze ROC Curves. R package version 1.18.5. [https://cran.r-project.org/web/packages/pROC/pROC.pdf](https://cran.r-project.org/web/packages/pROC/pROC.pdf)
 [^akoglu]: Akoğlu H. User's guide to sample size estimation in diagnostic accuracy studies. Turkish Journal of Emergency Medicine. 2016;16(2):57–61. [https://doi.org/10.4103/2452-2473.357348](https://doi.org/10.4103/2452-2473.357348)
+
+
+## Release History
+
+### 0.9.5 (2025-11-18)
+- Added "Distance to Top Left" column to the coordinates table.
+
+### 0.9.4 (2025-06-24)
+- Initial public release
+
+### Versioning
+Public versioning for this module begins at v0.9.x. Earlier versions (v0.1–v0.8) were used during internal development and were not released, as the module had not yet reached a feature-complete state. Starting from v0.9.x reflects that the module is now largely stable and nearing a full v1.0 release.
